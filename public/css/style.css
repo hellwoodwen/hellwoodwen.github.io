@@ -1,0 +1,195 @@
+/* @override 
+	http://localhost:8888/public/css/style.css
+	http://localhost:8888/public/css/style.css?hash=01
+	http://localhost:8888/public/css/style.css?v=03 */
+	
+/* @group general */
+	
+@font-face {
+  font-family: raleway-black;
+  src: url('../fonts/Raleway-Black.ttf');
+}
+
+@font-face {
+  font-family: raleway-regular;
+  src: url('../fonts/Raleway-Regular.ttf');
+}
+
+@font-face {
+font-family: raleway-light;
+src: url('../fonts/Raleway-Light.ttf');
+}
+
+@font-face {
+font-family: raleway-semibold;
+src: url('../fonts/Raleway-SemiBold.ttf');
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font: 1em raleway-regular, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	display: flex;
+	color: #272727;
+}
+
+header {
+	width: 30vw;
+}
+
+a {
+	color: #646464;
+}
+
+p {
+	color: #6e6e6e;
+}
+
+/* @end */
+
+/* @group header */
+header h1 {
+	text-align: center;
+	font-family: raleway-black;
+	margin: 30px 40px 1px;
+	border-bottom: 1px solid #c4c4c4;
+	line-height: 28px;
+}
+
+header h2 {
+	margin-top: 0;
+	text-align: center;
+	font: 0.8em raleway-light;
+	color: #919191;
+}
+
+/* @end */
+
+/* @group Navegation */
+nav ul {
+margin-right: 0;
+margin-bottom: 0;
+margin-left: 0;
+padding: 30px 0 0;
+}
+
+nav ul li {
+	margin-left: 30px;
+	list-style: none;
+	font: 1.1em raleway-semibold;
+	margin-bottom: 17px;
+}
+
+nav ul ul {
+	padding: 0 0 20px;
+}
+
+nav ul ul li {
+	font: 0.9em raleway-light;
+	padding-left: 15px;
+}
+
+nav a {
+	text-decoration: none;
+}
+
+nav a.actual {
+	font-family: raleway-semibold;
+	cursor: default;
+}
+/* @end */
+
+main {
+	width: 70vw;
+	padding-top: 20px;
+	display: flex;
+	flex-flow: wrap;
+}
+
+main section {
+	margin-bottom: 30px;
+	width: 50%;
+}
+
+main section h1 {
+	margin: 0 0 15px;
+}
+
+main section div.project img{
+	width: 90%;
+	height: auto;
+}
+
+/* @group project */
+
+body.project main section h1 {
+	border-bottom: 1px solid #939393;
+	font: 3em raleway-semibold;
+	padding-bottom: 9px;
+}
+
+body.project main section h2 {
+font: 1.5em raleway-light;
+color: #7e7e7e;
+}
+
+body.project main section {
+	width: 90%;
+}
+
+body.project .img-container img{
+	width: 100%;
+}
+
+/* @end */
+
+/* @group responsive */
+
+@media only screen and (max-width: 600px) {
+  body {
+    display: block;
+  }
+  
+  header {
+  	width: 97vw;
+  	background: url(menu.gif) 95% 15px no-repeat;
+  	position: absolute;
+  	z-index: 1;
+  	background-color: #ffffff;
+  }
+  
+  header h1 {
+  	margin: 0;
+  	padding: 9px 0 5px 8px;
+  	text-align: left;
+  }
+  
+  header h2 {
+  	text-align: left;
+  	padding: 1px 0 0 8px;
+  }
+  
+  header nav {
+  	display: none;
+  }
+  
+  header nav.visible {
+  	display: block;
+  }
+  
+  main {
+  	position: absolute;
+  	top: 60px;
+  	width: calc(100vw - 50px);
+  	padding-top: 40px;
+		display: flex;
+  	justify-content: center;
+  }
+  
+  main section {
+  	margin-bottom: 30px;
+  	width: 80%;
+  }
+}
+
+/* @end */

@@ -1,8 +1,82 @@
-<html><body></body></html> 
-
 <!DOCTYPE html>
-<html>
-<body>
-<h1>hopeless thus fearless</h1>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="public/css/style.css?v=03" />
+    <title>Wenwen Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <div id="hero">
+        <h1>WenWen</h1>
+        <h2>This is a subtitle</h2>
+      </div>
+      <nav>
+        <ul>
+          <li>Projects</li>
+          <ul>
+            <li><a href="projects/neptune.html">Neptune</a></li>
+            <li><a href="#">Sun</a></li>
+            <li><a href="#">Mars</a></li>
+            <li><a href="#">Moon</a></li>
+          </ul>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h1>Neptune</h1>
+        <div class="project">
+          <img
+            src="public/pics/th_neptune.jpg"
+            width="400"
+            height="400"
+            alt="Photo project 1"
+          />
+        </div>
+      </section>
+      <section>
+        <h1>Sun</h1>
+        <div class="project">
+          <img
+            src="public/pics/th_sun.jpg"
+            width="400"
+            height="400"
+            alt="Photo project 1"
+          />
+        </div>
+      </section>
+      <section>
+        <h1>Mars</h1>
+        <div class="project">
+          <img
+            src="public/pics/th_mars.jpg"
+            width="400"
+            height="400"
+            alt="Photo project 1"
+          />
+        </div>
+      </section>
+      <section>
+        <h1>Moon</h1>
+        <div class="project">
+          <img
+            src="public/pics/th_moon.jpg"
+            width="400"
+            height="400"
+            alt="Photo project 1"
+          />
+        </div>
+      </section>
+    </main>
+  </body>
+  <script>
+    document.querySelector("#hero").addEventListener('click',function(){
+      console.log('miau')
+      document.querySelector("nav").classList.toggle('visible')
+    })
+  </script>
 </html>
