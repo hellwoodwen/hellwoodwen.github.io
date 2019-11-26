@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="public/css/style.css?v=03" />
+    <link rel="stylesheet" href="public/css/style.css?v=05" />
     <title>Wenwen Portfolio</title>
   </head>
   <body>
@@ -15,12 +15,12 @@
       </div>
       <nav>
         <ul>
-          <li>Projects</li>
+          <li>Works</li>
           <ul>
-            <li><a href="projects/neptune.html">Neptune</a></li>
-            <li><a href="#">Sun</a></li>
-            <li><a href="#">Mars</a></li>
-            <li><a href="#">Moon</a></li>
+            <li>
+              <a href="projects/index.html" class="actual">Oil Painting</a>
+            </li>
+            <!-- <li><a href="">Performance</a></li> -->
           </ul>
           <li><a href="about.html">About</a></li>
         </ul>
@@ -28,55 +28,76 @@
     </header>
     <main>
       <section>
-        <h1>Neptune</h1>
-        <div class="project">
-          <img
-            src="public/pics/th_neptune.jpg"
-            width="400"
-            height="400"
-            alt="Photo project 1"
-          />
+        <div class="project" data-picName="IMG_0837">
+          <img src="public/pics/th/th-IMG_0837.jpg" />
         </div>
       </section>
       <section>
-        <h1>Sun</h1>
-        <div class="project">
-          <img
-            src="public/pics/th_sun.jpg"
-            width="400"
-            height="400"
-            alt="Photo project 1"
-          />
+        <div class="project" data-picName="IMG_0839">
+          <img src="public/pics/th/th-IMG_0839.jpg" />
         </div>
       </section>
       <section>
-        <h1>Mars</h1>
-        <div class="project">
-          <img
-            src="public/pics/th_mars.jpg"
-            width="400"
-            height="400"
-            alt="Photo project 1"
-          />
+        <div class="project" data-picName="IMG_0840">
+          <img src="public/pics/th/th-IMG_0840.jpg" />
         </div>
       </section>
       <section>
-        <h1>Moon</h1>
-        <div class="project">
-          <img
-            src="public/pics/th_moon.jpg"
-            width="400"
-            height="400"
-            alt="Photo project 1"
-          />
+        <div class="project" data-picName="IMG_0842">
+          <img src="public/pics/th/th-IMG_0842.jpg" />
+        </div>
+      </section>
+      <section>
+        <div class="project" data-picName="IMG_0843">
+          <img src="public/pics/th/th-IMG_0843.jpg" />
+        </div>
+      </section>
+      <section>
+        <div class="project" data-picName="IMG_0845">
+          <img src="public/pics/th/th-IMG_0845.jpg" />
+        </div>
+      </section>
+      <section>
+        <div class="project" data-picName="IMG_0847">
+          <img src="public/pics/th/th-IMG_0847.jpg" />
+        </div>
+      </section>
+      <section>
+        <div class="project" data-picName="IMG_0848">
+          <img src="public/pics/th/th-IMG_0848.jpg" />
+        </div>
+      </section>
+      <section>
+        <div class="project" data-picName="IMG_0850">
+          <img src="public/pics/th/th-IMG_0850.jpg" />
+        </div>
+      </section>
+      <section>
+        <div class="project" data-picName="IMG_0851">
+          <img src="public/pics/th/th-IMG_0851.jpg" />
         </div>
       </section>
     </main>
+    <div id="modalWindow">
+      <div id="modalNav">
+        <ul>
+          <li class="prevBot"><span>Prev</span></li>
+          <li class="nextBot"><span>Next</span></li>
+          <li class="closeBot"><span>Close</span></li>
+        </ul>
+      </div>
+      <!--modalNav-->
+      <div id="picContainer">
+        
+      </div>
+      <!--picContainer-->
+    </div>
+    <!--#modalWindow-->
   </body>
   <script>
-    document.querySelector("#hero").addEventListener('click',function(){
-      console.log('miau')
-      document.querySelector("nav").classList.toggle('visible')
+    document.querySelector("#hero").addEventListener("click", function() {
+      document.querySelector("nav").classList.toggle("visible")
     })
   </script>
+  <script src="public/js/modal.js"></script>
 </html>
