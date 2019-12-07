@@ -106,11 +106,18 @@ nav a.actual {
 	position: fixed;
 	width: 100vw;
 	height: 100vmax;
-	background-color: rgba(0, 0, 0, 0.62);
+	background: rgba(0, 0, 0, 0.62);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
 	z-index: 2;
 	display: none;
 	transition-property: opacity;
 	transition-duration: 300ms;
+}
+
+#modalWindow.loading {
+	background: url(ajax-loader3.gif) center center no-repeat fixed;
 }
 
 #modalWindow.visible {
