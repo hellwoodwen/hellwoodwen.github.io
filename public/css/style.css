@@ -122,6 +122,21 @@ nav a.actual {
 	
 }
 
+#modalWindow.animated{
+    animation: appear 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 #modalWindow #picContainer {
 	display: flex;
 	width: 100vw;
