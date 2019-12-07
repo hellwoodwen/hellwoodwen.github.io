@@ -6,6 +6,7 @@ document
   .querySelector("#modalNav li.closeBot")
   .addEventListener("click", function() {
     modalWindow.classList.toggle("visible")
+    modalWindow.classList.toggle("animated")
   })
 
 
@@ -23,12 +24,8 @@ const loadPic = function(picIndex) {
 
 projectList.forEach(function(singularProject, index) {
   singularProject.addEventListener("click", function() {
-    document.querySelector("#modalWindow").classList.add("visible")
-    // and remove 'faded-out' in order to fade-in our element
-    requestAnimationFrame(() => {
-      modalWindow.classList.remove("faded-out")
-    })
-    //document.querySelector("#modalWindow").classList.toggle("visible")
+    modalWindow.classList.add("visible")
+    modalWindow.classList.add('animated')
     loadPic(index)
   })
 })
