@@ -1,18 +1,22 @@
+let actualIndexLoaded = 0
+const projectList = document.querySelectorAll("div.project")
+const modalWindow = document.querySelector("#modalWindow")
+
 document
   .querySelector("#modalNav li.closeBot")
   .addEventListener("click", function() {
-    document.querySelector("#modalWindow").classList.toggle("visible")
+    modalWindow.classList.toggle("visible")
   })
 
-let actualIndexLoaded = 0
-const projectList = document.querySelectorAll("div.project")
 
 const loadPic = function(picIndex) {
+  modalWindow.classList.add('loading')
   document.getElementById("picContainer").innerHTML = ""
   objImage = new Image()
   objImage.src = `/public/pics/big/${projectList[picIndex].dataset.picname}.jpg`
   objImage.onload = function() {
     document.getElementById("picContainer").appendChild(objImage)
+
     actualIndexLoaded = picIndex
   }
 }
@@ -22,7 +26,7 @@ projectList.forEach(function(singularProject, index) {
     document.querySelector("#modalWindow").classList.add("visible")
     // and remove 'faded-out' in order to fade-in our element
     requestAnimationFrame(() => {
-      document.querySelector("#modalWindow").classList.remove("faded-out")
+      modalWindow.classList.remove("faded-out")
     })
     //document.querySelector("#modalWindow").classList.toggle("visible")
     loadPic(index)
