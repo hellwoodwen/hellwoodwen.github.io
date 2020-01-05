@@ -18,9 +18,13 @@
           <li>Works</li>
           <ul>
             <li>
-              <a href="projects/index.html" class="actual">Oil Painting</a>
+              <a href="index.html" class="actual">Oil Painting</a>
             </li>
-            <!-- <li><a href="">Performance</a></li> -->
+            <li><a href="performance.html">Conceptual Performance</a></li>
+            <!-- <li><a href="firedance.html">Fire Dance</a></li> -->
+            <li>
+              <a href="sculptureinstalations.html">Sculpture & Installation</a>
+            </li>
           </ul>
           <li><a href="about.html">About</a></li>
         </ul>
@@ -28,57 +32,57 @@
     </header>
     <main>
       <section>
-        <div class="project" data-picName="IMG_0837">
-          <img src="public/pics/th/th-IMG_0837.jpg" />
+        <div class="project" data-galleryName="0" data-picName="IMG_0837.jpg">
+          <img src="public/pics/oilpaintings/th/th-IMG_0837.jpg" />
         </div>
       </section>
       <section>
-        <div class="project" data-picName="IMG_0839">
-          <img src="public/pics/th/th-IMG_0839.jpg" />
+        <div class="project" data-galleryName="0" data-picName="IMG_0839.jpg">
+          <img src="public/pics/oilpaintings/th/th-IMG_0839.jpg" />
         </div>
       </section>
       <section>
-        <div class="project" data-picName="IMG_0840">
-          <img src="public/pics/th/th-IMG_0840.jpg" />
+        <div class="project" data-galleryName="0" data-picName="IMG_0840.jpg">
+          <img src="public/pics/oilpaintings/th/th-IMG_0840.jpg" />
         </div>
       </section>
       <section>
-        <div class="project" data-picName="IMG_0842">
-          <img src="public/pics/th/th-IMG_0842.jpg" />
+        <div class="project" data-galleryName="0" data-picName="IMG_0842.jpg">
+          <img src="public/pics/oilpaintings/th/th-IMG_0842.jpg" />
         </div>
       </section>
       <section>
-        <div class="project" data-picName="IMG_0843">
-          <img src="public/pics/th/th-IMG_0843.jpg" />
+        <div class="project" data-galleryName="0" data-picName="IMG_0843.jpg">
+          <img src="public/pics/oilpaintings/th/th-IMG_0843.jpg" />
         </div>
       </section>
       <section>
-        <div class="project" data-picName="IMG_0845">
-          <img src="public/pics/th/th-IMG_0845.jpg" />
+        <div class="project" data-galleryName="0" data-picName="IMG_0845.jpg">
+          <img src="public/pics/oilpaintings/th/th-IMG_0845.jpg" />
         </div>
       </section>
       <section>
-        <div class="project" data-picName="IMG_0847">
-          <img src="public/pics/th/th-IMG_0847.jpg" />
+        <div class="project" data-galleryName="0" data-picName="IMG_0847.jpg">
+          <img src="public/pics/oilpaintings/th/th-IMG_0847.jpg" />
         </div>
       </section>
       <section>
-        <div class="project" data-picName="IMG_0848">
-          <img src="public/pics/th/th-IMG_0848.jpg" />
+        <div class="project" data-galleryName="0" data-picName="IMG_0848.jpg">
+          <img src="public/pics/oilpaintings/th/th-IMG_0848.jpg" />
         </div>
       </section>
       <section>
-        <div class="project" data-picName="IMG_0850">
-          <img src="public/pics/th/th-IMG_0850.jpg" />
+        <div class="project" data-galleryName="0" data-picName="IMG_0850.jpg">
+          <img src="public/pics/oilpaintings/th/th-IMG_0850.jpg" />
         </div>
       </section>
       <section>
-        <div class="project" data-picName="IMG_0851">
-          <img src="public/pics/th/th-IMG_0851.jpg" />
+        <div class="project" data-galleryName="0" data-picName="IMG_0851.jpg">
+          <img src="public/pics/oilpaintings/th/th-IMG_0851.jpg" />
         </div>
       </section>
     </main>
-    <div id="modalWindow">
+    <div id="modalWindow" class="singleElement">
       <div id="modalNav">
         <ul>
           <li class="prevBot"><span>Prev</span></li>
@@ -87,9 +91,7 @@
         </ul>
       </div>
       <!--modalNav-->
-      <div id="picContainer">
-        
-      </div>
+      <div id="picContainer"></div>
       <!--picContainer-->
     </div>
     <!--#modalWindow-->
@@ -98,6 +100,7 @@
     document.querySelector("#hero").addEventListener("click", function() {
       document.querySelector("nav").classList.toggle("visible")
     })
+    const galleryUrl = "/public/pics/oilpaintings/big/"
   </script>
   <script src="public/js/modal.js"></script>
 </html>

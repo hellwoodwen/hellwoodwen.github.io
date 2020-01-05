@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="public/css/style.css?v=07" />
+    <title>Wenwen Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <div id="hero">
+        <h1>WenWen</h1>
+        <!-- <h2>This is a subtitle</h2> -->
+      </div>
+      <nav>
+        <ul>
+          <li>Works</li>
+          <ul>
+            <li>
+              <a href="index.html">Oil Painting</a>
+            </li>
+            <li>
+              <a href="performance.html" class="actual"
+                >Conceptual Performance</a
+              >
+            </li>
+            <!-- <li><a href="firedance.html">Fire Dance</a></li> -->
+            <li>
+              <a href="sculptureinstalations.html">Sculpture & Installation</a>
+            </li>
+          </ul>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="project" data-galleryName="poi">
+          <img src="public/pics/performances/poi/th/th-por-performance01.jpg" />
+          <h1>Poi Dance Improvisations</h1>
+        </div>
+      </section>
+      <section>
+        <div class="project" data-galleryName="digDialectics">
+          <img
+            src="public/pics/performances/dig-dialectics/th/th-digital-dialectics.jpg"
+          />
+          <h1>Digital Dialectics</h1>
+        </div>
+      </section>
+      <section>
+        <div class="project" data-galleryName="envolvementi">
+          <img
+            src="public/pics/performances/envolvement-i/th/th-evolvement-1.jpg"
+          />
+          <h1>Evolvement I</h1>
+        </div>
+      </section>
+      <section>
+        <div class="project" data-galleryName="envolvementii">
+          <img
+            src="public/pics/performances/envolvement-ii/th/th-0518_1.jpg"
+          />
+          <h1>Evolvement II</h1>
+        </div>
+      </section>
+    </main>
+    <div id="modalWindow" class="multiElements">
+      <div id="modalNav">
+        <ul>
+          <li class="prevBot"><span>Prev</span></li>
+          <li class="nextBot"><span>Next</span></li>
+          <li class="closeBot"><span>Close</span></li>
+        </ul>
+      </div>
+      <!--modalNav-->
+      <div id="picContainer"></div>
+      <!--picContainer-->
+    </div>
+    <!--#modalWindow-->
+  </body>
+  <script>
+    document.querySelector("#hero").addEventListener("click", function() {
+      document.querySelector("nav").classList.toggle("visible")
+    })
+    const gallContent = {
+      generalURL: "public/pics/performances/",
+      poi: {
+        url: "poi/",
+        elements: [
+          ["picture", "por-performance01.jpg"],
+          ["picture", "por-performance02.jpg"],
+          ["picture", "por-performance03.jpg"],
+          ["picture", "por-performance04.jpg"],
+          ["video", "video.jpg", "a0820s369u5"]
+        ]
+      },
+      digDialectics: {
+        elements: [["video", "", "i30328bakeh"]]
+      },
+      envolvementi: {
+        url: "envolvement-i/",
+        elements: [
+          ["picture", "evolvement-1-2.jpg"],
+          ["picture", "evolvement-1.jpg"]
+        ]
+      },
+      envolvementii:{
+        url: "envolvement-ii/",
+        elements: [
+          ['picture','0518_1.jpg'],
+          ['picture','0518_2.jpg'],
+          ['picture','0518_3.jpg'],
+          ['picture','0518_4.jpg'],
+          ['picture','0518_5.jpg'],
+          ['picture','0518_6.jpg'],
+          ['picture','0518_7.jpg'],
+          ['picture','0518_8.jpg'],
+          ['picture','0518_9.jpg']
+        ]
+      }
+    }
+    const galleryUrl = "/public/pics/performances/"
+  </script>
+  <script src="public/js/modal.js"></script>
+</html>
