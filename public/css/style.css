@@ -45,7 +45,6 @@ a {
 p {
 	color: #6e6e6e;
 }
-
 /* @end */
 
 /* @group header */
@@ -111,6 +110,8 @@ nav a.actual {
 	display: none;
 	transition-property: opacity;
 	transition-duration: 300ms;
+	left: 0;
+	top: 0;
 }
 
 .loading {
@@ -157,7 +158,7 @@ nav a.actual {
 	width: 21vw;
 	padding: 3vh 32px 30px 30px;
 	color: #ffffff;
-	background-color: rgba(0, 0, 0, 0.71);
+	background-color: rgba(0, 0, 0, 0.75);
 	margin-top: 26px;
 	margin-right: 3vw;
 	max-height: 65vh;
@@ -171,8 +172,13 @@ nav a.actual {
 }
 
 #modalWindow.withExpl #modalExplWindow p {
-	color: #a0a0a0;
+	color: #878787;
 	font-size: 0.9em;
+}
+
+#modalWindow.withExpl #modalExplWindow span {
+	font-family: raleway-semibold;
+	color: #d2d2d2;
 }
 
 #modalWindow.multiElements {
@@ -203,7 +209,7 @@ nav a.actual {
 	left: 0;
 	z-index: 1;
 	height: 100vh;
-	width: 100vw;
+	width: 1vw;
 }
 
 #modalNav ul {
@@ -237,10 +243,14 @@ nav a.actual {
 }
 
 #modalNav li.nextBot {
-	right: 0;
+	right: -99vw;
 	padding: 0 30px 100px 12px;
 	height: calc(100vh - 200px);
 	margin-top: 100px;
+}
+
+#modalNav li.hidden {
+	display: none;
 }
 
 #modalNav li.nextBot:after {
@@ -249,7 +259,7 @@ nav a.actual {
 
 #modalNav li.closeBot {
 	top: 0;
-	right: 0;
+	right: -99vw;
 	padding: 4px 22px 10px 20px;
 	height: 70px;
 }
@@ -307,7 +317,8 @@ main section {
 main section h1 {
 	margin: 0 0 15px -2px;
 	padding-right: 30px;
-	line-height: 0.9em;
+	line-height: 1em;
+	font-size: 1.1em;
 }
 
 main section div.project img{
@@ -388,6 +399,35 @@ body.project .img-container img{
   	width: 47%;
   	padding-right: 3px;
 		padding-left: 7px;
+  }
+  
+  #modalWindow.withExpl {
+  	align-items: center;
+  	justify-content: center;
+  }
+  
+  #modalWindow.withExpl #picContainer {
+  	width: 100vw;
+  	height: 60vh;
+  	order: -1;
+  }
+  
+  #modalWindow.withExpl #modalExplWindow {
+  	bottom: 20px;
+  	position: fixed;
+  	width: 81vw;
+  	left: 50%;
+  	margin-left: -46vw;
+  }
+  
+  #modalWindow.withExpl.multiElements #modalExplWindow {
+  	width: 81vw;
+  	overflow: auto;
+  	padding: 10px 28px;
+  	margin: 0;
+  	position: static;
+  	order: -1;
+  	height: 20vh;	
   }
 }
 
