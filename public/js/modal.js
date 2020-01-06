@@ -47,19 +47,13 @@ const launchModal = function(loadElementURL, loadedElementIndex, elementType) {
   modalWindow.className = ""
   modalWindow.classList.add("visible")
   modalWindow.classList.add("animated")
-  if (
-    selectedGalleryName != "0" &&
-    gallContent[selectedGalleryName].elements.length > 1
-  ) {
-    generateSubGallNav(gallContent[selectedGalleryName])
-    modalWindow.classList.add("multiElements")
-    if (gallContent[selectedGalleryName].explanation) {
-      console.log("armar ventana de explicacion")
-      const explWindow = document.createElement("div")
-      explWindow.id = "modalExplWindow"
-      explWindow.innerHTML = gallContent[selectedGalleryName].explanation
-      modalWindow.classList.add("withExpl")
-      modalWindow.appendChild(explWindow)
+  if (selectedGalleryName != "0") {
+    if (gallContent[selectedGalleryName].elements.length > 1) {
+      generateSubGallNav(gallContent[selectedGalleryName])
+      modalWindow.classList.add("multiElements")
+    } else {
+      document.querySelector("#modalNav li.prevBot").classList.add("hidden")
+      document.querySelector("#modalNav li.nextBot").classList.add("hidden")
     }
   } else {
     modalWindow.classList.add("singleElement")
@@ -69,6 +63,14 @@ const launchModal = function(loadElementURL, loadedElementIndex, elementType) {
     document.getElementById("picContainer"),
     elementType
   )
+  if (gallContent[selectedGalleryName].explanation) {
+    console.log("armar ventana de explicacion")
+    const explWindow = document.createElement("div")
+    explWindow.id = "modalExplWindow"
+    explWindow.innerHTML = gallContent[selectedGalleryName].explanation
+    modalWindow.classList.add("withExpl")
+    modalWindow.appendChild(explWindow)
+  }
 }
 
 const generateSubGallNav = function(galleryObject) {
@@ -125,6 +127,7 @@ const loadElement = function(loadElementURL, container, type) {
       `https://v.qq.com/txp/iframe/player.html?vid=${loadElementURL}`
     )
     container.appendChild(vidCont)
+    container.classList.remove("loading")
   }
 }
 
@@ -138,6 +141,9 @@ document
     if (subGallNav != null) modalWindow.removeChild(subGallNav)
     const explanWindow = document.querySelector("#modalExplWindow")
     if (explanWindow != null) modalWindow.removeChild(explanWindow)
+    document.getElementById("picContainer").innerHTML = ""
+    document.querySelector("#modalNav li.prevBot").classList.remove("hidden")
+    document.querySelector("#modalNav li.nextBot").classList.remove("hidden")
   })
 
 document
