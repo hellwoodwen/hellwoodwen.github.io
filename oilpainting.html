@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="public/css/style.css?v=07" />
+    <title>Wenwen Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <div id="hero">
+        <h1><a href="/">WenWen</a></h1>
+        <!-- <h2>This is a subtitle</h2> -->
+      </div>
+      <nav>
+        <ul>
+          <li>Works</li>
+          <ul>
+            <li>
+              <a href="index.html">Sculpture & Installation</a>
+            </li>
+            <li>
+              <a href="oilpainting.html" class="actual">Oil Painting</a>
+            </li>
+            <li><a href="performance.html">Conceptual Performance</a></li>
+            <!-- <li><a href="firedance.html">Fire Dance</a></li> -->
+          </ul>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="project" data-galleryName="0" data-picName="IMG_0837.jpg">
+          <img src="public/pics/oilpaintings/th/th-IMG_0837.jpg" />
+        </div>
+      </section>
+      <section>
+        <div class="project" data-galleryName="0" data-picName="IMG_0839.jpg">
+          <img src="public/pics/oilpaintings/th/th-IMG_0839.jpg" />
+        </div>
+      </section>
+      <section>
+        <div class="project" data-galleryName="0" data-picName="IMG_0840.jpg">
+          <img src="public/pics/oilpaintings/th/th-IMG_0840.jpg" />
+        </div>
+      </section>
+      <section>
+        <div class="project" data-galleryName="0" data-picName="IMG_0842.jpg">
+          <img src="public/pics/oilpaintings/th/th-IMG_0842.jpg" />
+        </div>
+      </section>
+      <section>
+        <div class="project" data-galleryName="0" data-picName="IMG_0843.jpg">
+          <img src="public/pics/oilpaintings/th/th-IMG_0843.jpg" />
+        </div>
+      </section>
+      <section>
+        <div class="project" data-galleryName="0" data-picName="IMG_0845.jpg">
+          <img src="public/pics/oilpaintings/th/th-IMG_0845.jpg" />
+        </div>
+      </section>
+      <section>
+        <div class="project" data-galleryName="0" data-picName="IMG_0847.jpg">
+          <img src="public/pics/oilpaintings/th/th-IMG_0847.jpg" />
+        </div>
+      </section>
+      <section>
+        <div class="project" data-galleryName="0" data-picName="IMG_0848.jpg">
+          <img src="public/pics/oilpaintings/th/th-IMG_0848.jpg" />
+        </div>
+      </section>
+      <section>
+        <div class="project" data-galleryName="0" data-picName="IMG_0850.jpg">
+          <img src="public/pics/oilpaintings/th/th-IMG_0850.jpg" />
+        </div>
+      </section>
+      <section>
+        <div class="project" data-galleryName="0" data-picName="IMG_0851.jpg">
+          <img src="public/pics/oilpaintings/th/th-IMG_0851.jpg" />
+        </div>
+      </section>
+    </main>
+    <div id="modalWindow" class="singleElement">
+      <div id="modalNav">
+        <ul>
+          <li class="prevBot"><span>Prev</span></li>
+          <li class="nextBot"><span>Next</span></li>
+          <li class="closeBot"><span>Close</span></li>
+        </ul>
+      </div>
+      <!--modalNav-->
+      <div id="picContainer"></div>
+      <!--picContainer-->
+    </div>
+    <!--#modalWindow-->
+  </body>
+  <script>
+    document.querySelector("#hero").addEventListener("click", function() {
+      document.querySelector("nav").classList.toggle("visible")
+    })
+    const galleryUrl = "/public/pics/oilpaintings/big/"
+  </script>
+  <script src="public/js/modal.js"></script>
+</html>

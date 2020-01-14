@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="public/css/style.css?v=09" />
+    <title>Wenwen Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <div id="hero">
+        <h1><a href="/">WenWen</a></h1>
+        <!-- <h2>This is a subtitle</h2> -->
+      </div>
+      <nav>
+        <ul>
+          <li>Works</li>
+          <ul>
+            <li>
+              <a href="index.html" class="actual">Sculpture & Installation</a>
+            </li>
+            <li>
+              <a href="oilpainting.html">Oil Painting</a>
+            </li>
+            <li><a href="performance.html">Conceptual Performance</a></li>
+            <!-- <li><a href="firedance.html">Fire Dance</a></li> -->
+          </ul>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+
+      <section>
+        <div class="project" data-galleryName="semiconductivity">
+          <img src="public/pics/sculpture/semiconduct/th/th-Semi-Conductivity.jpg" />
+          <h1>Semi-Conductivity</h1>
+        </div>
+      </section>
+
+      <section>
+        <div class="project" data-galleryName="bodySquencer">
+          <img
+            src="public/pics/sculpture/body-sequencer/th/th-Body-Sequencer.jpg"
+          />
+          <h1>Body Sequencer</h1>
+        </div>
+      </section>
+      <section>
+        <div class="project" data-galleryName="presentrevisit">
+          <img
+            src="public/pics/sculpture/present-revisit/th/th-present-revisit-1.jpg"
+          />
+          <h1>Present Revisit</h1>
+        </div>
+      </section>
+      <section>
+        <div class="project" data-galleryName="foodvariation">
+          <img src="public/pics/sculpture/food-variation/th/th-food-variation-1.jpg" />
+          <h1>Food Variation</h1>
+        </div>
+      </section>
+    </main>
+    <div id="modalWindow" class="multiElements">
+      <div id="modalNav">
+        <ul>
+          <li class="prevBot"><span>Prev</span></li>
+          <li class="nextBot"><span>Next</span></li>
+          <li class="closeBot"><span>Close</span></li>
+        </ul>
+      </div>
+      <!--modalNav-->
+      <div id="picContainer"></div>
+      <!--picContainer-->
+    </div>
+    <!--#modalWindow-->
+  </body>
+  <script>
+    document.querySelector("#hero").addEventListener("click", function() {
+      document.querySelector("nav").classList.toggle("visible")
+    })
+    const gallContent = {
+      generalURL: "public/pics/sculpture/",
+      semiconductivity: {
+        url: "semiconduct/",
+        elements: [
+          ["picture", "Semi-Conductivity.jpg"],
+          ["picture", "Semi-Conductivity-2.jpg"],
+          ["picture", "Semi-Conductivity-3.jpg"],
+          ["picture", "Semi-Conductivity-4.jpg"],
+          ["picture", "Semi-Conductivity-5.jpg"],
+          ["picture", "Semi-Conductivity-6.jpg"],
+          ["picture", "Semi-Conductivity-7.jpg"],
+          ["picture", "Semi-Conductivity-8.jpg"],
+          ["picture", "Semi-Conductivity-9.jpg"]
+        ],
+        explanation: "<h1>Semi-conductivity, 2019</h1><p><span>Customized electronics, polyester stripes, steel stands, connection bits and cabling</span></p><p>Semiconductivity is an interactive installation prototype by Wen Wen and John K. Lucy. They created a fuild boundary responding to the presence of people. A series of ultrasonic sensors detect human motion and feed in motors to deform a wall of plastic stripes. The material references shanty towns and temporary beddings made by the homeless that protect themselves from rain. The installation aims to promote awareness of the housing crisis in London and the prevalence of rough sleepers.</p>"
+      },
+      bodySquencer: {
+        url: "body-sequencer/",
+        elements: [["picture", "Body-Sequencer.jpg"]],
+        explanation: "<h1>Body Sequencer, 2019</h1><p>Body Sequencer aims to facilitate people coping with stress and emotional shock by engaging with an instrument that translates the rhythm of heartbeats into flowing sound. It allows partakers to observe one’s physiological status via externalized data - subtle vibrations that affect the mental state of the user and the interaction environment recursively.</p>"
+      },
+      presentrevisit: {
+        url: "present-revisit/",
+        elements: [
+          ["picture", "present-revisit-1.jpg"],
+          ["picture", "present-revisit-2.jpg"]
+        ],
+        explanation: "<h1>Present Revisit, 2019</h1><p><span>Opaque acrylic tube sections, LED strips, electronics, motion-tracking camera.</span></p><p>Present Revisit is an interactive kinetic light sculpture in the form of a floating illuminated ellipse. The sculpture is a 3D depiction of the planetary orbit that forms the foundation of the concepts we traditionally understand as ‘time’: the days, months and years. The elliptic form also resembles the imagined trajectory of an electron that exemplifies the atomic world and evokes the finer gradations and measurements of time.</p><p>The asymmetry of the sculpture represents the imperfection of human world and the current materialistic reality. Diffused light effects around the ellipse represent simulations of the stars and planets shining in a night sky. The piece takes a minimalistic approach and calls to mind the vastness and silence outer space, a preview of the spacetime humanity might possibly inhabit in an era of progressive cosmic explorations.</p><p>An observer in the presence of the installation is able to manipulate and conduct the light patterns around the ellipse using gestural hand movements. Other behaviours of the sculpture include a glowing portal, symbolising a spacetime travel console for the near future.</p>"
+      },
+      foodvariation: {
+        url: "food-variation/",
+        elements: [
+          ["picture", "food-variation-1.jpg"],
+          ["picture", "food-variation-2.jpg"],
+          ["picture", "food-variation-3.jpg"],
+          ["picture", "food-variation-4.jpg"],
+          ["picture", "food-variation-5.jpg"]
+        ],
+        explanation: "<h1>Food Variation, 2018</h1><p><span>Paperboard, rope, plant fiber glue, yogurt melts.</span></p><p>An interactive installation that reflects a current reality where sweet and sour sexual pleasure exists as an open offer hanging along our way of social progression. The audience is encouraged to taste the yogurt melts snack attached to the paperboards; To be, or not to be. How do you want it to be; all up to ourselves.</p>"
+      }
+    }
+    const galleryUrl = "/public/pics/performances/"
+  </script>
+  <script src="public/js/modal.js"></script>
+</html>
