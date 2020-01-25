@@ -11479,7 +11479,7 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ 1:
+/***/ 2:
 /*!******************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Foilpainting&absolutePagePath=%2FUsers%2FXiaoBaiCai%2F2020%2Flabs%2Fwenwen-next%2Fpages%2Foilpainting.js ***!
   \******************************************************************************************************************************************************/
@@ -11502,5 +11502,5 @@ module.exports = dll_5f137288facb1107b491;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=oilpainting.js.map
