@@ -4,12 +4,30 @@ import ActiveLink from "./LinksActiver"
 import Link from "next/link"
 
 export default class Header extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = { navState: "hidden" }
+  }
+
+  openNav = event => {
+    event.preventDefault()
+    const navClass = this.state.navState === "hidden" ? "visible" : "hidden"
+    this.setState({
+      navState: navClass
+    })
+  }
+
   render() {
     const { title } = this.props
+    const { navState } = this.state
     return (
       <React.Fragment>
         <Head>
           <title> {title} </title>
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+          />
           <link
             rel="stylesheet"
             type="text/css"
@@ -23,8 +41,11 @@ export default class Header extends React.Component {
                 <a>WenWen</a>
               </Link>
             </h1>
+            <a id="openNav" onClick={e => this.openNav(e)}>
+              Open Nav
+            </a>
           </div>
-          <nav>
+          <nav className={navState}>
             <ul>
               <li>Works</li>
               <ul>
@@ -82,6 +103,46 @@ export default class Header extends React.Component {
             ul ul li {
               font: 0.9em raleway-light;
               padding-left: 15px;
+            }
+
+            @media only screen and (max-width: 600px) {
+              header {
+                width: 100vw;
+                position: absolute;
+                z-index: 1;
+                background-color: #ffffff;
+              }
+
+              h1 {
+                margin: 0;
+                padding: 12px 0 5px 15px;
+                float: left;
+                border-bottom: none;
+              }
+
+              #openNav {
+                background: url(static/css/menu.gif) 90% 18px no-repeat;
+                float: right;
+                height: 36px;
+                width: 202px;
+                text-indent: -1000px;
+              }
+
+              header div {
+                height: 50px;
+              }
+
+              nav {
+                display: none;
+              }
+
+              nav.visible {
+                display: block;
+              }
+
+              #hero {
+                border-bottom: 1px solid #c4c4c4;
+              }
             }
           `}
         </style>

@@ -1,6 +1,6 @@
 export default class multiObjectsGallery extends React.Component {
   render() {
-    const { galleryData } = this.props
+    const { galleryData, openProject } = this.props
     return (
       <React.Fragment>
         {galleryData.content.map(element => {
@@ -11,13 +11,14 @@ export default class multiObjectsGallery extends React.Component {
           return (
             <section key={element.url}>
               <div className="project">
-                <img src={picUrl} />
+                <a onClick={event => openProject(event, element, "multipleObjectsGallery" ,0)}>
+                  <img src={picUrl} />
+                </a>
                 <h1>{element.name}</h1>
               </div>
             </section>
           )
         })}
-
         <style jsx>
           {`
             img {

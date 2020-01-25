@@ -1,30 +1,67 @@
 @font-face {
-	font-family: raleway-black;
-	src: url("../fonts/Raleway-Black.ttf");
-  }
-  
-  @font-face {
-	font-family: raleway-regular;
-	src: url("../fonts/Raleway-Regular.ttf");
-  }
-  
-  @font-face {
-	font-family: raleway-light;
-	src: url("../fonts/Raleway-Light.ttf");
-  }
-  
-  @font-face {
-	font-family: raleway-semibold;
-	src: url("../fonts/Raleway-SemiBold.ttf");
-  }
-  
-  body {
-	margin: 0;
-	padding: 0;
-	font: 1em raleway-regular, "Helvetica Neue", Arial, Helvetica, Geneva,sans-serif;
-	color: #272727;
+  font-family: raleway-black;
+  src: url("../fonts/Raleway-Black.ttf");
 }
 
-a{
-	color: #646464;
+@font-face {
+  font-family: raleway-regular;
+  src: url("../fonts/Raleway-Regular.ttf");
+}
+
+@font-face {
+  font-family: raleway-light;
+  src: url("../fonts/Raleway-Light.ttf");
+}
+
+@font-face {
+  font-family: raleway-semibold;
+  src: url("../fonts/Raleway-SemiBold.ttf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font: 1em raleway-regular, "Helvetica Neue", Arial, Helvetica, Geneva,
+    sans-serif;
+  color: #272727;
+}
+
+a {
+  color: #646464;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav a.actual {
+  font-family: raleway-semibold;
+  cursor: default;
+}
+
+p {
+  color: #6e6e6e;
+}
+
+main {
+  grid-area: body;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  display: grid;
+  padding: 60px 60px 60px 0;
+  grid-gap: 50px 40px;
+}
+
+#openNav{
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  main {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    padding: 60px 20px 20px;
+  }
+
+  #openNav{
+    display: block;
+  }
 }

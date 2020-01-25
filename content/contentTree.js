@@ -7,10 +7,15 @@ export default [
       {
         name: "Semi-Conductivity",
         url: "semiconductivity",
-        explanation: "Explan for SemiCond",
+        explanation: {
+          title: "Semi-conductivity, 2019",
+          materials:
+            "Customized electronics, polyester stripes, steel stands, connection bits and cabling",
+          explanation:
+            "Semiconductivity is an interactive installation prototype by Wen Wen and John K. Lucy. They created a fuild boundary responding to the presence of people. A series of ultrasonic sensors detect human motion and feed in motors to deform a wall of plastic stripes. The material references shanty towns and temporary beddings made by the homeless that protect themselves from rain. The installation aims to promote awareness of the housing crisis in London and the prevalence of rough sleepers."
+        },
         pictures: [
           "Semi-Conductivity.jpg",
-          "Semi-Conductivity-1.jpg",
           "Semi-Conductivity-2.jpg",
           "Semi-Conductivity-3.jpg",
           "Semi-Conductivity-4.jpg",
@@ -24,19 +29,35 @@ export default [
       {
         name: "Body Sequencer",
         url: "bodySequencer",
-        explanation: "body sec explanation",
+        explanation: {
+          title: "Body Sequencer, 2019",
+          materials: "",
+          explanation:
+            "Body Sequencer aims to facilitate people coping with stress and emotional shock by engaging with an instrument that translates the rhythm of heartbeats into flowing sound. It allows partakers to observe one’s physiological status via externalized data - subtle vibrations that affect the mental state of the user and the interaction environment recursively."
+        },
         pictures: ["Body-Sequencer.jpg"]
       },
       {
         name: "Present Revisit",
         url: "presentRevisit",
-        explanation: "PResent explanation",
+        explanation: {
+          title: "Present Revisit, 2019",
+          materials:
+            "Opaque acrylic tube sections, LED strips, electronics, motion-tracking camera.",
+          explanation:
+            "Present Revisit is an interactive kinetic light sculpture in the form of a floating illuminated ellipse. The sculpture is a 3D depiction of the planetary orbit that forms the foundation of the concepts we traditionally understand as ‘time’: the days, months and years. The elliptic form also resembles the imagined trajectory of an electron that exemplifies the atomic world and evokes the finer gradations and measurements of time.\nThe asymmetry of the sculpture represents the imperfection of human world and the current materialistic reality. Diffused light effects around the ellipse represent simulations of the stars and planets shining in a night sky. The piece takes a minimalistic approach and calls to mind the vastness and silence outer space, a preview of the spacetime humanity might possibly inhabit in an era of progressive cosmic explorations.\nAn observer in the presence of the installation is able to manipulate and conduct the light patterns around the ellipse using gestural hand movements. Other behaviours of the sculpture include a glowing portal, symbolising a spacetime travel console for the near future."
+        },
         pictures: ["present-revisit-1.jpg", "present-revisit-2.jpg"]
       },
       {
         name: "Food Variation",
         url: "foodVariation",
-        explanation: "explanation for Food Variation",
+        explanation: {
+          title: "Food Variation, 2018",
+          materials: "Paperboard, rope, plant fiber glue, yogurt melts.",
+          explanation:
+            "An interactive installation that reflects a current reality where sweet and sour sexual pleasure exists as an open offer hanging along our way of social progression. The audience is encouraged to taste the yogurt melts snack attached to the paperboards; To be, or not to be. How do you want it to be; all up to ourselves."
+        },
         pictures: [
           "food-variation-1.jpg",
           "food-variation-2.jpg",
@@ -72,31 +93,31 @@ export default [
       {
         name: "Poi Dance Improvisations",
         url: "PoiDance",
-        explanation: "This is the explanation of this work",
+        explanation: "",
         pictures: [
           "por-performance01.jpg",
           "por-performance02.jpg",
           "por-performance03.jpg",
           "por-performance04.jpg"
         ],
-        videoQqCode: "qqcode"
+        videoQqCode: "a0820s369u5"
       },
       {
         name: "Digital Dialectics",
         url: "DigitalDialectics",
-        explanation: "explanation for dig dialec",
-        videoQqCode: "qqcode"
+        explanation: "",
+        videoQqCode: "i30328bakeh"
       },
       {
         name: "Evolvement I",
         url: "envolmement1",
-        explanation: "Explanation for Evolvement",
+        explanation: "",
         pictures: ["evolvement-1.jpg", "evolvement-1-2.jpg"]
       },
       {
         name: "Evolvement II",
         url: "envolmement2",
-        explanation: "Explanation for Evolvement 2",
+        explanation: "",
         pictures: [
           "0518_1.jpg",
           "0518_2.jpg",
