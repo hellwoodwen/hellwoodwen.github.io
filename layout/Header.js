@@ -29,6 +29,12 @@ export default class Header extends React.Component {
             content="width=device-width, initial-scale=1.0"
           />
           <link
+            rel="shortcut icon"
+            href="/favicon.ico"
+            type="image/x-icon"
+          ></link>
+          <link rel="icon" href="/favicon.ico" type="image/x-icon"></link>
+          <link
             rel="stylesheet"
             type="text/css"
             href="/static/css/styles.css"
