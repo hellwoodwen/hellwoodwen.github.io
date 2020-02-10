@@ -1,6 +1,12 @@
 import Header from "./Header"
 import Main from "./Main"
 import contentTree from "../content/contentTree"
+import NProgress from "nprogress"
+import Router from "next/router"
+
+Router.events.on("routeChangeStart", () => NProgress.start())
+Router.events.on("routeChangeComplete", () => NProgress.done())
+Router.events.on("routeChangeError", () => NProgress.done())
 
 export default class Layout extends React.Component {
   getInfo = pageName => {

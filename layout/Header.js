@@ -30,15 +30,16 @@ export default class Header extends React.Component {
           />
           <link
             rel="shortcut icon"
-            href="/favicon.ico"
+            href="static/favicon.ico"
             type="image/x-icon"
           ></link>
-          <link rel="icon" href="/favicon.ico" type="image/x-icon"></link>
+          <link rel="icon" href="static/favicon.ico" type="image/x-icon"></link>
           <link
             rel="stylesheet"
             type="text/css"
             href="/static/css/styles.css"
           />
+          <link rel='stylesheet' href='/static/css/nprogress.css'/>
         </Head>
         <header>
           <div id="hero">
