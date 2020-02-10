@@ -5,7 +5,6 @@ import trackPageView from "../helpers"
 export default class MyApp extends App {
   componentDidMount() {
     Router.onRouteChangeComplete = url => {
-		console.log('miau', url)
       trackPageView(url)
     }
   }
