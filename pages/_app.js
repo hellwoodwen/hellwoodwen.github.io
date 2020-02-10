@@ -1,22 +1,17 @@
-import App, { Container } from "next/app"
-import Head from "next/head"
+import App from "next/app"
 import Router from "next/router"
-import { trackPageView } from "../helpers"
+import trackPageView from "../helpers"
 
 export default class MyApp extends App {
   componentDidMount() {
     Router.onRouteChangeComplete = url => {
+		console.log('miau', url)
       trackPageView(url)
     }
   }
 
   render() {
     const { Component, pageProps } = this.props
-    return (
-      <Container>
-        <Head />
-        <Component {...pageProps} />
-      </Container>
-    )
+    return <Component {...pageProps} />
   }
 }

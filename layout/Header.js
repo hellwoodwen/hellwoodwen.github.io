@@ -2,20 +2,12 @@ import Head from "next/head"
 import contentTree from "../content/contentTree"
 import ActiveLink from "./LinksActiver"
 import Link from "next/link"
-// import Router from "next/router"
-// import { trackPageView } from "../helpers"
 
 export default class Header extends React.Component {
   constructor(props) {
     super(props)
     this.state = { navState: "hidden" }
   }
-
-  // componentDidMount() {
-  //   Router.onRouteChangeComplete = url => {
-  //     trackPageView(url)
-  //   }
-  // }
 
   openNav = event => {
     event.preventDefault()
