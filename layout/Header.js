@@ -2,12 +2,20 @@ import Head from "next/head"
 import contentTree from "../content/contentTree"
 import ActiveLink from "./LinksActiver"
 import Link from "next/link"
+// import Router from "next/router"
+// import { trackPageView } from "../helpers"
 
 export default class Header extends React.Component {
   constructor(props) {
     super(props)
     this.state = { navState: "hidden" }
   }
+
+  // componentDidMount() {
+  //   Router.onRouteChangeComplete = url => {
+  //     trackPageView(url)
+  //   }
+  // }
 
   openNav = event => {
     event.preventDefault()
@@ -23,15 +31,6 @@ export default class Header extends React.Component {
     return (
       <React.Fragment>
         <Head>
-          <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=UA-156063182-1"
-          ></script>
-          <script>
-            window.dataLayer = window.dataLayer || [] function gtag()
-            {dataLayer.push(arguments)}
-            gtag('js', new Date()) gtag('config', 'UA-156063182-1')
-          </script>
           <title> {title} </title>
           <meta
             name="viewport"
