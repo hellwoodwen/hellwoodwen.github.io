@@ -23,6 +23,15 @@ export default class Header extends React.Component {
     return (
       <React.Fragment>
         <Head>
+          <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-156063182-1"
+          ></script>
+          <script>
+            window.dataLayer = window.dataLayer || [] function gtag()
+            {dataLayer.push(arguments)}
+            gtag('js', new Date()) gtag('config', 'UA-156063182-1')
+          </script>
           <title> {title} </title>
           <meta
             name="viewport"
@@ -39,7 +48,7 @@ export default class Header extends React.Component {
             type="text/css"
             href="/static/css/styles.css"
           />
-          <link rel='stylesheet' href='/static/css/nprogress.css'/>
+          <link rel="stylesheet" href="/static/css/nprogress.css" />
         </Head>
         <header>
           <div id="hero">
