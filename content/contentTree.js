@@ -73,16 +73,15 @@ export default [
     url: "oilpainting",
     galleryType: "singleObject",
     content: [
-      "IMG_0837.jpg",
+      "oil-painting-1.jpg",
+      "oil-painting-2.jpg",
+      "IMG_0837_sold.jpg",
       "IMG_0839_sold.jpg",
       "IMG_0840.jpg",
-      "IMG_0842.jpg",
       "IMG_0843.jpg",
-      "IMG_0845.jpg",
       "IMG_0847.jpg",
       "IMG_0848_sold.jpg",
-      "IMG_0850_sold.jpg",
-      "IMG_0851.jpg"
+      "IMG_0850_sold.jpg"
     ]
   },
   {
