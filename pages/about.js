@@ -7,18 +7,19 @@ export default class extends React.Component {
         <main>
           <section>
             <h2>Biography</h2>
+
             <p>
-              Wen Wen takes a variety of artistic domains in her stride: from
-              classic oil painting to contemporary kinect sculpture. Her works
-              are inspired by psychedelic culture, social equality, and
-              contemplations over international political landscape.
+              Wen Wen is a conceptual artist who delves into kinect sculpture,
+              performance, painting. Her works are inspired by psychedelic
+              culture, struggles for social equality, and contemplations over
+              the international political landscape.
             </p>
+
             <p>
-              After obtaining a bachelor's degree in Japanese language at
-              Shanghai University of Finance and Economics, she is now studying
-              Design for Performance and Interaction at The Bartlett School of
-              Architecture, University College London, while practicing as a
-              trans-disciplinary artist.
+              After studying in the Japanese language at Shanghai University of
+              Finance and Economics, and Design Performance and Interaction at
+              The Bartlett School of Architecture, UCL, she now continues her
+              researches and trans-disciplinary practice in a nomadic fashion.
             </p>
 
             <h2>Get in Touch</h2>
