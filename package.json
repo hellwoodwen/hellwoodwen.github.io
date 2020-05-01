@@ -1,0 +1,32 @@
+{
+  "name": "wenwen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next",
+    "build": "next build && next export",
+    "start": "next start",
+    "now": "now"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hellwoodwen/hellwoodwen.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hellwoodwen/hellwoodwen.github.io/issues"
+  },
+  "homepage": "https://github.com/hellwoodwen/hellwoodwen.github.io#readme",
+  "dependencies": {
+    "isomorphic-fetch": "^2.2.1",
+    "next": "^9.2.0",
+    "now": "^17.0.3",
+    "nprogress": "^0.2.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  }
+}
