@@ -65,11 +65,21 @@ export default [
           "food-variation-4.jpg",
           "food-variation-5.jpg"
         ]
+      },
+      {
+        name: "Wind Shield",
+        url: "windShield",
+        explanation: {
+          title: "Wind Shield",
+          materials: "2018",
+          explanation: "Aluminum sheets welded to form the shape of an oriental folding screen, often used for indoor partition. Materials provided by John K. Lucy and Alexandra Yagilowich."
+        },
+        pictures: ["wind-shield.jpg"]
       }
     ]
   },
   {
-    name: "Oil Painting",
+    name: "Commipsy Painting",
     url: "oilpainting",
     galleryType: "singleObject",
     content: [
