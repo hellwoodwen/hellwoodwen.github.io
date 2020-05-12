@@ -24,6 +24,8 @@ export default class extends React.Component {
                                 Instagram
                             </a>
                             <a href="https://www.pinterest.com/hellwoodwen/" className="pinterest">Pinterest</a>
+                            <a href="https://www.linkedin.com/in/wen-wen-6a49a48a" className="linkedin">Linkedin</a>
+                            <a href="https://www.ucl.ac.uk/bartlett/architecture/present-revisit" className="ucl">UCL</a>
                         </p>
                     </section>
                     <style jsx>
@@ -41,6 +43,14 @@ export default class extends React.Component {
               a.pinterest {
                 background: url(/static/css/pinterest-logo-small.png) left top
                   no-repeat;
+              }
+              a.linkedin {
+                background: url(/static/css/linkin-small.png) left top
+                no-repeat;
+              }
+              a.ucl{
+                background: url(/static/css/ucl-small.png) left top
+                no-repeat;
               }
               .columnspan-3{
                 grid-column: 1 / -1;
