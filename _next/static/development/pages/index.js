@@ -60,7 +60,7 @@ __webpack_require__.r(__webpack_exports__);
     pictures: ["wind-shield.jpg"]
   }]
 }, {
-  name: "Oil Painting",
+  name: "Commipsy Painting",
   url: "oilpainting",
   galleryType: "singleObject",
   content: ["oil-painting-1.jpg", "oil-painting-2.jpg", "IMG_0837_sold.jpg", "IMG_0839_sold.jpg", "IMG_0840.jpg", "IMG_0843.jpg", "IMG_0847.jpg", "IMG_0848_sold.jpg", "IMG_0850_sold.jpg"]
@@ -12019,7 +12019,7 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ 1:
+/***/ 0:
 /*!***************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=D%3A%5CDEV%5Cwenwen-website%5Cpages%5Cindex.js ***!
   \***************************************************************************************************************/
@@ -12042,5 +12042,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[0,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map

@@ -60,7 +60,7 @@ __webpack_require__.r(__webpack_exports__);
     pictures: ["wind-shield.jpg"]
   }]
 }, {
-  name: "Oil Painting",
+  name: "Commipsy Painting",
   url: "oilpainting",
   galleryType: "singleObject",
   content: ["oil-painting-1.jpg", "oil-painting-2.jpg", "IMG_0837_sold.jpg", "IMG_0839_sold.jpg", "IMG_0840.jpg", "IMG_0843.jpg", "IMG_0847.jpg", "IMG_0848_sold.jpg", "IMG_0850_sold.jpg"]
@@ -12012,70 +12012,70 @@ function (_React$Component) {
         },
         __self: this
       }, __jsx("main", {
-        className: "jsx-1135639656",
+        className: "jsx-144959833",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 7
         },
         __self: this
       }, __jsx("section", {
-        className: "jsx-1135639656" + " " + "columnspan-3",
+        className: "jsx-144959833" + " " + "columnspan-3",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 8
         },
         __self: this
       }, __jsx("h2", {
-        className: "jsx-1135639656",
+        className: "jsx-144959833",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 9
         },
         __self: this
       }, "Biography"), __jsx("p", {
-        className: "jsx-1135639656",
+        className: "jsx-144959833",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 11
         },
         __self: this
       }, "Wen Wen is a conceptual artist who delves into kinect sculpture and contemporary performance. Her works are inspired by ecological challenges, debates of social equality, and contemplations over the international political landscape."), __jsx("p", {
-        className: "jsx-1135639656",
+        className: "jsx-144959833",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 14
         },
         __self: this
       }, "After studying in the Japanese language at Shanghai University of Finance and Economics, and Design Performance and Interaction at The Bartlett School of Architecture, UCL, she now continues her researches and trans-disciplinary practice in a nomadic fashion, channeling eccentricity into deadly aesthetics."), __jsx("h2", {
-        className: "jsx-1135639656",
+        className: "jsx-144959833",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 17
         },
         __self: this
       }, "Contact"), __jsx("p", {
-        className: "jsx-1135639656",
+        className: "jsx-144959833",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 18
         },
         __self: this
       }, "For enquiry please email"), __jsx("p", {
-        className: "jsx-1135639656",
+        className: "jsx-144959833",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 19
         },
         __self: this
       }, __jsx("span", {
-        className: "jsx-1135639656",
+        className: "jsx-144959833",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 20
         },
         __self: this
       }, "studio@hellwoodwen.com")), __jsx("p", {
-        className: "jsx-1135639656",
+        className: "jsx-144959833",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 22
@@ -12083,7 +12083,7 @@ function (_React$Component) {
         __self: this
       }, __jsx("a", {
         href: "https://www.instagram.com/hellwoodwen/?hl=en",
-        className: "jsx-1135639656" + " " + "instagram",
+        className: "jsx-144959833" + " " + "instagram",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 23
@@ -12091,16 +12091,32 @@ function (_React$Component) {
         __self: this
       }, "Instagram"), __jsx("a", {
         href: "https://www.pinterest.com/hellwoodwen/",
-        className: "jsx-1135639656" + " " + "pinterest",
+        className: "jsx-144959833" + " " + "pinterest",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 26
         },
         __self: this
-      }, "Pinterest"))), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_5___default.a, {
-        id: "1135639656",
+      }, "Pinterest"), __jsx("a", {
+        href: "https://www.linkedin.com/in/wen-wen-6a49a48a",
+        className: "jsx-144959833" + " " + "linkedin",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 27
+        },
         __self: this
-      }, "a.jsx-1135639656{width:50px;height:50px;text-indent:-1000px;display:inline-block;}a.instagram.jsx-1135639656{background:url(/static/css/ins-logo-small.png) left top no-repeat;}a.pinterest.jsx-1135639656{background:url(/static/css/pinterest-logo-small.png) left top no-repeat;}.columnspan-3.jsx-1135639656{grid-column:1 / -1;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkQ6XFxERVZcXHdlbndlbi13ZWJzaXRlXFxwYWdlc1xcYWJvdXQuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBNkJ5QixBQUdzQyxBQU9WLEFBSUEsQUFHUSxXQWJHLFFBY3hCLElBYmdDLG9CQUNDLHFCQUN2QixFQUlWLE1BSUEiLCJmaWxlIjoiRDpcXERFVlxcd2Vud2VuLXdlYnNpdGVcXHBhZ2VzXFxhYm91dC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBMYXlvdXQgZnJvbSBcIi4uL2xheW91dC9MYXlvdXRcIlxyXG5cclxuZXhwb3J0IGRlZmF1bHQgY2xhc3MgZXh0ZW5kcyBSZWFjdC5Db21wb25lbnQge1xyXG4gICAgcmVuZGVyKCkge1xyXG4gICAgICAgIHJldHVybiAoXHJcbiAgICAgICAgICAgIDxMYXlvdXQgdGl0bGU9XCJXZW53ZW4gLSBBYm91dFwiPlxyXG4gICAgICAgICAgICAgICAgPG1haW4+XHJcbiAgICAgICAgICAgICAgICAgICAgPHNlY3Rpb24gY2xhc3NOYW1lPVwiY29sdW1uc3Bhbi0zXCI+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIDxoMj5CaW9ncmFwaHk8L2gyPlxyXG5cclxuICAgICAgICAgICAgICAgICAgICAgICAgPHA+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICBXZW4gV2VuIGlzIGEgY29uY2VwdHVhbCBhcnRpc3Qgd2hvIGRlbHZlcyBpbnRvIGtpbmVjdCBzY3VscHR1cmUgYW5kIGNvbnRlbXBvcmFyeSBwZXJmb3JtYW5jZS4gSGVyIHdvcmtzIGFyZSBpbnNwaXJlZCBieSBlY29sb2dpY2FsIGNoYWxsZW5nZXMsIGRlYmF0ZXMgb2Ygc29jaWFsIGVxdWFsaXR5LCBhbmQgY29udGVtcGxhdGlvbnMgb3ZlciB0aGUgaW50ZXJuYXRpb25hbCBwb2xpdGljYWwgbGFuZHNjYXBlLlxyXG4gICAgICAgICAgICAgICAgICAgICAgICA8L3A+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIDxwPkFmdGVyIHN0dWR5aW5nIGluIHRoZSBKYXBhbmVzZSBsYW5ndWFnZSBhdCBTaGFuZ2hhaSBVbml2ZXJzaXR5IG9mIEZpbmFuY2UgYW5kIEVjb25vbWljcywgYW5kIERlc2lnbiBQZXJmb3JtYW5jZSBhbmQgSW50ZXJhY3Rpb24gYXQgVGhlIEJhcnRsZXR0IFNjaG9vbCBvZiBBcmNoaXRlY3R1cmUsIFVDTCwgc2hlIG5vdyBjb250aW51ZXMgaGVyIHJlc2VhcmNoZXMgYW5kIHRyYW5zLWRpc2NpcGxpbmFyeSBwcmFjdGljZSBpbiBhIG5vbWFkaWMgZmFzaGlvbiwgY2hhbm5lbGluZyBlY2NlbnRyaWNpdHkgaW50byBkZWFkbHkgYWVzdGhldGljcy5cclxuICAgICAgICAgICAgICAgICAgICAgICAgPC9wPlxyXG5cclxuICAgICAgICAgICAgICAgICAgICAgICAgPGgyPkNvbnRhY3Q8L2gyPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICA8cD5Gb3IgZW5xdWlyeSBwbGVhc2UgZW1haWw8L3A+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIDxwPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPHNwYW4+c3R1ZGlvQGhlbGx3b29kd2VuLmNvbTwvc3Bhbj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgPC9wPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICA8cD5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxhIGhyZWY9XCJodHRwczovL3d3dy5pbnN0YWdyYW0uY29tL2hlbGx3b29kd2VuLz9obD1lblwiIGNsYXNzTmFtZT1cImluc3RhZ3JhbVwiPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIEluc3RhZ3JhbVxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9hPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPGEgaHJlZj1cImh0dHBzOi8vd3d3LnBpbnRlcmVzdC5jb20vaGVsbHdvb2R3ZW4vXCIgY2xhc3NOYW1lPVwicGludGVyZXN0XCI+UGludGVyZXN0PC9hPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICA8L3A+XHJcbiAgICAgICAgICAgICAgICAgICAgPC9zZWN0aW9uPlxyXG4gICAgICAgICAgICAgICAgICAgIDxzdHlsZSBqc3g+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIHtgXHJcbiAgICAgICAgICAgICAgICAgICAgICAgIGEge1xyXG4gICAgICAgICAgICAgICAgICAgICAgICAgIHdpZHRoOiA1MHB4O1xyXG4gICAgICAgICAgICAgICAgICAgICAgICAgIGhlaWdodDogNTBweDtcclxuICAgICAgICAgICAgICAgICAgICAgICAgICB0ZXh0LWluZGVudDogLTEwMDBweDtcclxuICAgICAgICAgICAgICAgICAgICAgICAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgICBhLmluc3RhZ3JhbSB7XHJcbiAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kOiB1cmwoL3N0YXRpYy9jc3MvaW5zLWxvZ28tc21hbGwucG5nKSBsZWZ0IHRvcFxyXG4gICAgICAgICAgICAgICAgICBuby1yZXBlYXQ7XHJcbiAgICAgICAgICAgICAgfVxyXG4gICAgICAgICAgICAgIGEucGludGVyZXN0IHtcclxuICAgICAgICAgICAgICAgIGJhY2tncm91bmQ6IHVybCgvc3RhdGljL2Nzcy9waW50ZXJlc3QtbG9nby1zbWFsbC5wbmcpIGxlZnQgdG9wXHJcbiAgICAgICAgICAgICAgICAgIG5vLXJlcGVhdDtcclxuICAgICAgICAgICAgICB9XHJcbiAgICAgICAgICAgICAgLmNvbHVtbnNwYW4tM3tcclxuICAgICAgICAgICAgICAgIGdyaWQtY29sdW1uOiAxIC8gLTE7XHJcbiAgICAgICAgICAgICAgfVxyXG4gICAgICAgICAgICBgfSA8L3N0eWxlPlxyXG4gICAgICAgICAgICAgICAgPC9tYWluPlxyXG4gICAgICAgICAgICA8L0xheW91dD5cclxuICAgICAgICApXHJcbiAgICB9XHJcbn1cclxuIl19 */\n/*@ sourceURL=D:\\\\DEV\\\\wenwen-website\\\\pages\\\\about.js */")));
+      }, "Linkedin"), __jsx("a", {
+        href: "https://www.ucl.ac.uk/bartlett/architecture/present-revisit",
+        className: "jsx-144959833" + " " + "ucl",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 28
+        },
+        __self: this
+      }, "UCL"))), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_5___default.a, {
+        id: "144959833",
+        __self: this
+      }, "a.jsx-144959833{width:50px;height:50px;text-indent:-1000px;display:inline-block;}a.instagram.jsx-144959833{background:url(/static/css/ins-logo-small.png) left top no-repeat;}a.pinterest.jsx-144959833{background:url(/static/css/pinterest-logo-small.png) left top no-repeat;}a.linkedin.jsx-144959833{background:url(/static/css/linkin-small.png) left top no-repeat;}a.ucl.jsx-144959833{background:url(/static/css/ucl-small.png) left top no-repeat;}.columnspan-3.jsx-144959833{grid-column:1 / -1;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkQ6XFxERVZcXHdlbndlbi13ZWJzaXRlXFxwYWdlc1xcYWJvdXQuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBK0J5QixBQUdzQyxBQU9WLEFBSUEsQUFJRixBQUlBLEFBR1UsV0FyQkcsUUFzQnhCLElBckJnQyxvQkFDQyxrQkFpQmpDLEdBaEJVLEFBWVYsRUFSQSxNQUlBIiwiZmlsZSI6IkQ6XFxERVZcXHdlbndlbi13ZWJzaXRlXFxwYWdlc1xcYWJvdXQuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgTGF5b3V0IGZyb20gXCIuLi9sYXlvdXQvTGF5b3V0XCJcclxuXHJcbmV4cG9ydCBkZWZhdWx0IGNsYXNzIGV4dGVuZHMgUmVhY3QuQ29tcG9uZW50IHtcclxuICAgIHJlbmRlcigpIHtcclxuICAgICAgICByZXR1cm4gKFxyXG4gICAgICAgICAgICA8TGF5b3V0IHRpdGxlPVwiV2Vud2VuIC0gQWJvdXRcIj5cclxuICAgICAgICAgICAgICAgIDxtYWluPlxyXG4gICAgICAgICAgICAgICAgICAgIDxzZWN0aW9uIGNsYXNzTmFtZT1cImNvbHVtbnNwYW4tM1wiPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICA8aDI+QmlvZ3JhcGh5PC9oMj5cclxuXHJcbiAgICAgICAgICAgICAgICAgICAgICAgIDxwPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgV2VuIFdlbiBpcyBhIGNvbmNlcHR1YWwgYXJ0aXN0IHdobyBkZWx2ZXMgaW50byBraW5lY3Qgc2N1bHB0dXJlIGFuZCBjb250ZW1wb3JhcnkgcGVyZm9ybWFuY2UuIEhlciB3b3JrcyBhcmUgaW5zcGlyZWQgYnkgZWNvbG9naWNhbCBjaGFsbGVuZ2VzLCBkZWJhdGVzIG9mIHNvY2lhbCBlcXVhbGl0eSwgYW5kIGNvbnRlbXBsYXRpb25zIG92ZXIgdGhlIGludGVybmF0aW9uYWwgcG9saXRpY2FsIGxhbmRzY2FwZS5cclxuICAgICAgICAgICAgICAgICAgICAgICAgPC9wPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICA8cD5BZnRlciBzdHVkeWluZyBpbiB0aGUgSmFwYW5lc2UgbGFuZ3VhZ2UgYXQgU2hhbmdoYWkgVW5pdmVyc2l0eSBvZiBGaW5hbmNlIGFuZCBFY29ub21pY3MsIGFuZCBEZXNpZ24gUGVyZm9ybWFuY2UgYW5kIEludGVyYWN0aW9uIGF0IFRoZSBCYXJ0bGV0dCBTY2hvb2wgb2YgQXJjaGl0ZWN0dXJlLCBVQ0wsIHNoZSBub3cgY29udGludWVzIGhlciByZXNlYXJjaGVzIGFuZCB0cmFucy1kaXNjaXBsaW5hcnkgcHJhY3RpY2UgaW4gYSBub21hZGljIGZhc2hpb24sIGNoYW5uZWxpbmcgZWNjZW50cmljaXR5IGludG8gZGVhZGx5IGFlc3RoZXRpY3MuXHJcbiAgICAgICAgICAgICAgICAgICAgICAgIDwvcD5cclxuXHJcbiAgICAgICAgICAgICAgICAgICAgICAgIDxoMj5Db250YWN0PC9oMj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgPHA+Rm9yIGVucXVpcnkgcGxlYXNlIGVtYWlsPC9wPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICA8cD5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxzcGFuPnN0dWRpb0BoZWxsd29vZHdlbi5jb208L3NwYW4+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIDwvcD5cclxuICAgICAgICAgICAgICAgICAgICAgICAgPHA+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8YSBocmVmPVwiaHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS9oZWxsd29vZHdlbi8/aGw9ZW5cIiBjbGFzc05hbWU9XCJpbnN0YWdyYW1cIj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBJbnN0YWdyYW1cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvYT5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxhIGhyZWY9XCJodHRwczovL3d3dy5waW50ZXJlc3QuY29tL2hlbGx3b29kd2VuL1wiIGNsYXNzTmFtZT1cInBpbnRlcmVzdFwiPlBpbnRlcmVzdDwvYT5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxhIGhyZWY9XCJodHRwczovL3d3dy5saW5rZWRpbi5jb20vaW4vd2VuLXdlbi02YTQ5YTQ4YVwiIGNsYXNzTmFtZT1cImxpbmtlZGluXCI+TGlua2VkaW48L2E+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8YSBocmVmPVwiaHR0cHM6Ly93d3cudWNsLmFjLnVrL2JhcnRsZXR0L2FyY2hpdGVjdHVyZS9wcmVzZW50LXJldmlzaXRcIiBjbGFzc05hbWU9XCJ1Y2xcIj5VQ0w8L2E+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIDwvcD5cclxuICAgICAgICAgICAgICAgICAgICA8L3NlY3Rpb24+XHJcbiAgICAgICAgICAgICAgICAgICAgPHN0eWxlIGpzeD5cclxuICAgICAgICAgICAgICAgICAgICAgICAge2BcclxuICAgICAgICAgICAgICAgICAgICAgICAgYSB7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgd2lkdGg6IDUwcHg7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgaGVpZ2h0OiA1MHB4O1xyXG4gICAgICAgICAgICAgICAgICAgICAgICAgIHRleHQtaW5kZW50OiAtMTAwMHB4O1xyXG4gICAgICAgICAgICAgICAgICAgICAgICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcclxuICAgICAgICAgICAgICAgICAgICAgICAgfVxyXG4gICAgICAgICAgICAgIGEuaW5zdGFncmFtIHtcclxuICAgICAgICAgICAgICAgIGJhY2tncm91bmQ6IHVybCgvc3RhdGljL2Nzcy9pbnMtbG9nby1zbWFsbC5wbmcpIGxlZnQgdG9wXHJcbiAgICAgICAgICAgICAgICAgIG5vLXJlcGVhdDtcclxuICAgICAgICAgICAgICB9XHJcbiAgICAgICAgICAgICAgYS5waW50ZXJlc3Qge1xyXG4gICAgICAgICAgICAgICAgYmFja2dyb3VuZDogdXJsKC9zdGF0aWMvY3NzL3BpbnRlcmVzdC1sb2dvLXNtYWxsLnBuZykgbGVmdCB0b3BcclxuICAgICAgICAgICAgICAgICAgbm8tcmVwZWF0O1xyXG4gICAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgICBhLmxpbmtlZGluIHtcclxuICAgICAgICAgICAgICAgIGJhY2tncm91bmQ6IHVybCgvc3RhdGljL2Nzcy9saW5raW4tc21hbGwucG5nKSBsZWZ0IHRvcFxyXG4gICAgICAgICAgICAgICAgbm8tcmVwZWF0O1xyXG4gICAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgICBhLnVjbHtcclxuICAgICAgICAgICAgICAgIGJhY2tncm91bmQ6IHVybCgvc3RhdGljL2Nzcy91Y2wtc21hbGwucG5nKSBsZWZ0IHRvcFxyXG4gICAgICAgICAgICAgICAgbm8tcmVwZWF0O1xyXG4gICAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgICAuY29sdW1uc3Bhbi0ze1xyXG4gICAgICAgICAgICAgICAgZ3JpZC1jb2x1bW46IDEgLyAtMTtcclxuICAgICAgICAgICAgICB9XHJcbiAgICAgICAgICAgIGB9IDwvc3R5bGU+XHJcbiAgICAgICAgICAgICAgICA8L21haW4+XHJcbiAgICAgICAgICAgIDwvTGF5b3V0PlxyXG4gICAgICAgIClcclxuICAgIH1cclxufVxyXG4iXX0= */\n/*@ sourceURL=D:\\\\DEV\\\\wenwen-website\\\\pages\\\\about.js */")));
     }
   }]);
 
@@ -12111,7 +12127,7 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ 0:
+/***/ 1:
 /*!********************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fabout&absolutePagePath=D%3A%5CDEV%5Cwenwen-website%5Cpages%5Cabout.js ***!
   \********************************************************************************************************************/
@@ -12134,5 +12150,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[0,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=about.js.map
