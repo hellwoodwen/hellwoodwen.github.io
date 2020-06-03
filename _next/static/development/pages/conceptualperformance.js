@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\oilpainting.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\conceptualperformance.js"],{
 
 /***/ "./content/contentTree.js":
 /*!********************************!*\
@@ -6486,21 +6486,21 @@ var assign=Object.assign.bind(Object);function g(){return assign;}Object.defineP
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Foilpainting&absolutePagePath=D%3A%5CDEV%5Cwenwen-website%5Cpages%5Coilpainting.js!./":
-/*!****************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Foilpainting&absolutePagePath=D%3A%5CDEV%5Cwenwen-website%5Cpages%5Coilpainting.js ***!
-  \****************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fconceptualperformance&absolutePagePath=D%3A%5CDEV%5Cwenwen-website%5Cpages%5Cconceptualperformance.js!./":
+/*!************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fconceptualperformance&absolutePagePath=D%3A%5CDEV%5Cwenwen-website%5Cpages%5Cconceptualperformance.js ***!
+  \************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/oilpainting", function() {
-      var mod = __webpack_require__(/*! ./pages/oilpainting.js */ "./pages/oilpainting.js")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/conceptualperformance", function() {
+      var mod = __webpack_require__(/*! ./pages/conceptualperformance.js */ "./pages/conceptualperformance.js")
       if(true) {
-        module.hot.accept(/*! ./pages/oilpainting.js */ "./pages/oilpainting.js", function() {
-          if(!next.router.components["/oilpainting"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/oilpainting.js */ "./pages/oilpainting.js")
-          next.router.update("/oilpainting", updatedPage)
+        module.hot.accept(/*! ./pages/conceptualperformance.js */ "./pages/conceptualperformance.js", function() {
+          if(!next.router.components["/conceptualperformance"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/conceptualperformance.js */ "./pages/conceptualperformance.js")
+          next.router.update("/conceptualperformance", updatedPage)
         })
       }
       return mod
@@ -11959,10 +11959,10 @@ module.exports = __webpack_require__(/*! ./dist/style */ "./node_modules/styled-
 
 /***/ }),
 
-/***/ "./pages/oilpainting.js":
-/*!******************************!*\
-  !*** ./pages/oilpainting.js ***!
-  \******************************/
+/***/ "./pages/conceptualperformance.js":
+/*!****************************************!*\
+  !*** ./pages/conceptualperformance.js ***!
+  \****************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -11982,7 +11982,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "D:\\DEV\\wenwen-website\\pages\\oilpainting.js";
+var _jsxFileName = "D:\\DEV\\wenwen-website\\pages\\conceptualperformance.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement;
 
@@ -12002,7 +12002,7 @@ function (_React$Component) {
     key: "render",
     value: function render() {
       return __jsx(_layout_Layout__WEBPACK_IMPORTED_MODULE_6__["default"], {
-        galleryName: "oilpainting",
+        galleryName: "conceptualperformance",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 5
@@ -12019,14 +12019,14 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ 1:
-/*!********************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Foilpainting&absolutePagePath=D%3A%5CDEV%5Cwenwen-website%5Cpages%5Coilpainting.js ***!
-  \********************************************************************************************************************************/
+/***/ 2:
+/*!****************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fconceptualperformance&absolutePagePath=D%3A%5CDEV%5Cwenwen-website%5Cpages%5Cconceptualperformance.js ***!
+  \****************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Foilpainting&absolutePagePath=D%3A%5CDEV%5Cwenwen-website%5Cpages%5Coilpainting.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Foilpainting&absolutePagePath=D%3A%5CDEV%5Cwenwen-website%5Cpages%5Coilpainting.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fconceptualperformance&absolutePagePath=D%3A%5CDEV%5Cwenwen-website%5Cpages%5Cconceptualperformance.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fconceptualperformance&absolutePagePath=D%3A%5CDEV%5Cwenwen-website%5Cpages%5Cconceptualperformance.js!./");
 
 
 /***/ }),
@@ -12042,5 +12042,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
-//# sourceMappingURL=oilpainting.js.map
+},[[2,"static/runtime/webpack.js"]]]);
+//# sourceMappingURL=conceptualperformance.js.map

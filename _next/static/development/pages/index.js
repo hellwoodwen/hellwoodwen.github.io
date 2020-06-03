@@ -60,11 +60,6 @@ __webpack_require__.r(__webpack_exports__);
     pictures: ["wind-shield.jpg"]
   }]
 }, {
-  name: "Commipsy Painting",
-  url: "oilpainting",
-  galleryType: "singleObject",
-  content: ["oil-painting-1.jpg", "oil-painting-2.jpg", "IMG_0837_sold.jpg", "IMG_0839_sold.jpg", "IMG_0840.jpg", "IMG_0843.jpg", "IMG_0847.jpg", "IMG_0848_sold.jpg", "IMG_0850_sold.jpg"]
-}, {
   name: "Conceptual Performance",
   url: "conceptualperformance",
   galleryType: "multiObjects",
@@ -90,6 +85,11 @@ __webpack_require__.r(__webpack_exports__);
     explanation: "",
     pictures: ["0518_1.jpg", "0518_2.jpg", "0518_3.jpg", "0518_4.jpg", "0518_5.jpg", "0518_6.jpg", "0518_7.jpg", "0518_8.jpg", "0518_9.jpg"]
   }]
+}, {
+  name: "Commipsy Painting",
+  url: "oilpainting",
+  galleryType: "singleObject",
+  content: ["oil-painting-1.jpg", "oil-painting-2.jpg", "IMG_0837_sold.jpg", "IMG_0839_sold.jpg", "IMG_0840.jpg", "IMG_0843.jpg", "IMG_0847.jpg", "IMG_0848_sold.jpg", "IMG_0850_sold.jpg"]
 }]);
 
 /***/ }),
