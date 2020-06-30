@@ -75,6 +75,15 @@ export default [
           explanation: "Aluminum sheets welded to form the shape of an oriental folding screen, often used for indoor partition. Materials provided by John K. Lucy and Alexandra Yagilowich."
         },
         pictures: ["wind-shield.jpg"]
+      },
+      {
+        name: "Body Sequencer Concept Animation",
+        url: "BodySequencerConceptAnimation",
+        explanation: {
+          title: "Body Sequencer Concept Animation",
+          explanation: ""
+        },
+        videoWistiaCode: "s8nqk9q2ih"
       }
     ]
   },
