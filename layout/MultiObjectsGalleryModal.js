@@ -61,6 +61,7 @@ export default class MultiObjectGalleryModal extends React.Component {
         return (
             <div id="modalGallery"
                 className={wrapperStyle}>
+
                 <div id="picContainer">
                     {
                     galleryElements.length > 1 && (
@@ -71,7 +72,7 @@ export default class MultiObjectGalleryModal extends React.Component {
                             } of ${
                                 galleryElements.length
                             }`
-                        }</div>
+                        } </div>
                     )
                 }
                     {
@@ -95,10 +96,14 @@ export default class MultiObjectGalleryModal extends React.Component {
                     {
                     galleryElements[actualItem][0] === "WistiaVideo" && (
                         <NoSSR>
-                            <WistiaEmbed hashedId={galleryElements[actualItem][1]} playerColor="#56be8e"/>
+                            <WistiaEmbed hashedId={
+                                    galleryElements[actualItem][1]
+                                }
+                                playerColor="#56be8e"/>
                         </NoSSR>
                     )
                 } </div>
+
                 {
                 hasDescription && (
                     <div id="explanationBox">
@@ -117,6 +122,7 @@ export default class MultiObjectGalleryModal extends React.Component {
                     } </div>
                 )
             }
+
                 {
                 hasMultiplePictures && (
                     <div id="navBar">
@@ -131,39 +137,29 @@ export default class MultiObjectGalleryModal extends React.Component {
                             {
                             galleryElements.map((element, index) => {
                                 const aStyle = index === actualItem ? "actual" : ""
+                                const picURL = element[0] === "image" ? element[1] : "video-default.jpg"
                                 return (
                                     <a onClick={
                                             e => this.changeElement(e, index, element[0])
                                         }
                                         className={aStyle}
                                         key={index}>
-                                        {
-                                        element[0] === "video" && (
-                                            <img src={
-                                                this.getPicPath(galleryName, projectInfo.url, "th", "video-default.jpg")
-                                            }/>
-                                        )
-                                    }
-                                        {
-                                        element[0] === "image" && (
-                                            <img src={
-                                                this.getPicPath(galleryName, projectInfo.url, "th", element[1])
-                                            }/>
-                                        )
-                                    } </a>
+                                        <img src={
+                                            this.getPicPath(galleryName, projectInfo.url, "th", picURL)
+                                        }/>
+                                    </a>
                                 )
                             })
                         } </div>
                         <div id="modalNext" className="modalButton">
                             <a onClick={
                                 e => this.changeNext(e, galleryElements.length)
-                            }>
-                                Next
-                            </a>
+                            }>Next</a>
                         </div>
                     </div>
                 )
             }
+
                 <div id="modalClose" className="modalButton">
                     <a onClick={closeProject}>Close</a>
                 </div>
@@ -182,7 +178,6 @@ export default class MultiObjectGalleryModal extends React.Component {
               grid-template-columns: [prev] 10vw [nav] auto [next] 12vw [close] 12vw [end];
               grid-template-rows: [image] 80% [navbar] 20vh [end];
             }
-
             #picContainer {
               grid-column: prev / next;
               grid-row: image / navbar;
@@ -190,7 +185,6 @@ export default class MultiObjectGalleryModal extends React.Component {
               align-items: center;
               justify-content: center;
             }
-
             #explanationBox {
               background-color: rgba(0, 0, 0, 0.57);
               padding: 40px 35px 20px;
@@ -198,13 +192,11 @@ export default class MultiObjectGalleryModal extends React.Component {
               grid-column: next / end;
               grid-row: image / navbar;
             }
-
             #navBar {
               grid-column: prev / close;
               display: grid;
               grid-template-columns: [prev] 10vw [nav] auto [next] 12vw [close];
             }
-
             #navThumbs {
               display: flex;
               flex-wrap: nowrap;
@@ -212,57 +204,46 @@ export default class MultiObjectGalleryModal extends React.Component {
               justify-content: flex-start;
               align-items: center;
             }
-
             #modalClose {
               grid-column: close / end;
             }
-
             #modalGallery.singlePicture #picContainer {
               grid-row: image / end;
             }
-
             #picContainer img {
               width: auto;
               height: auto;
               max-height: 100%;
               max-width: 100%;
             }
-
             iframe {
               width: 80vw;
               height: 71vh;
             }
-
             #modalGallery.singlePicture #explanationBox {
               grid-row: image / navbar;
             }
-
             .modalButton {
               display: flex;
               justify-content: center;
               align-items: center;
             }
-
             .modalButton a {
               width: 71px;
               height: 71px;
               background-image: url(/static/css/modal-nav.png);
               text-indent: -10000px;
             }
-
             .modalButton a:hover {
               background-position-x: right;
               cursor: pointer;
             }
-
             #modalPrev a {
               background-position-y: bottom;
             }
-
             #modalNext a {
               background-position-y: center;
             }
-
             #picCounter {
               position: absolute;
               left: 30%;
@@ -276,7 +257,6 @@ export default class MultiObjectGalleryModal extends React.Component {
               padding-top: 6px;
               border-radius: 20px;
             }
-
             #navThumbs a {
               width: 110px;
               min-width: 110px;
@@ -285,7 +265,6 @@ export default class MultiObjectGalleryModal extends React.Component {
               align-items: center;
               margin: 0 7px;
             }
-
             #navThumbs img {
               width: auto;
               height: auto;
@@ -297,17 +276,14 @@ export default class MultiObjectGalleryModal extends React.Component {
               font: 1.3em raleway-black;
               color: white;
             }
-
             span {
               font-family: raleway-semibold;
               color: #d2d2d2;
             }
-
             p {
               color: #878787;
               font-size: 0.9em;
             }
-
             a.actual img {
               border-right: 5px solid #e7e7e7;
               border-left: 5px solid #e7e7e7;
@@ -322,7 +298,6 @@ export default class MultiObjectGalleryModal extends React.Component {
                   "picture picture"
                   "explanation explanation";
               }
-
               #modalGallery.singlePicture.hasDescription {
                 grid-template-rows: [start]auto[picture] 80px [close] 40vh[description];
                 grid-template-columns: [start]auto[close] 80px [end];
@@ -333,7 +308,6 @@ export default class MultiObjectGalleryModal extends React.Component {
                 grid-template-rows: 100px;
                 grid-template-areas: "prev thumbs next";
               }
-
               #picContainer {
                 grid-area: picture;
               }
@@ -341,18 +315,15 @@ export default class MultiObjectGalleryModal extends React.Component {
                 grid-column: start / description;
                 grid-row: start / close;
               }
-
               #modalGallery.singlePicture.hasDescription #modalClose {
                 grid-column: close / end;
                 grid-row: picture / close;
               }
-
               #modalGallery.singlePicture.hasDescription #explanationBox {
                 grid-column: start / close;
                 grid-row: picture / description;
                 margin-right: 80px;
               }
-
               #explanationBox {
                 grid-area: explanation;
                 padding-bottom: 50px;
@@ -366,11 +337,9 @@ export default class MultiObjectGalleryModal extends React.Component {
               #modalClose {
                 grid-area: close;
               }
-
               #navThumbs {
                 grid-area: thumbs;
               }
-
               #picContainer img {
                 max-height: 50vh;
               }

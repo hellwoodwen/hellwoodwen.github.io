@@ -35,7 +35,8 @@ export default [
           explanation:
             "Body Sequencer aims to facilitate people coping with stress and emotional shock by engaging with an instrument that translates the rhythm of heartbeats into flowing sound. It allows partakers to observe one’s physiological status via externalized data - subtle vibrations that affect the mental state of the user and the interaction environment recursively."
         },
-        pictures: ["Body-Sequencer.jpg"]
+        pictures: ["Body-Sequencer.jpg"],
+        videoWistiaCode: "s8nqk9q2ih"
       },
       {
         name: "Present Revisit",
@@ -75,15 +76,6 @@ export default [
           explanation: "Aluminum sheets welded to form the shape of an oriental folding screen, often used for indoor partition. Materials provided by John K. Lucy and Alexandra Yagilowich."
         },
         pictures: ["wind-shield.jpg"]
-      },
-      {
-        name: "Body Sequencer Concept Animation",
-        url: "BodySequencerConceptAnimation",
-        explanation: {
-          title: "Body Sequencer Concept Animation",
-          explanation: ""
-        },
-        videoWistiaCode: "s8nqk9q2ih"
       }
     ]
   },
