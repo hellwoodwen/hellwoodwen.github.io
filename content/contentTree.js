@@ -1,6 +1,6 @@
 export default [
   {
-    name: "Sculpture & Installation",
+    name: "Sculpture & Interactive Installation",
     url: "sculptureandinstallation",
     galleryType: "multiObjects",
     content: [
@@ -76,6 +76,16 @@ export default [
           explanation: "Aluminum sheets welded to form the shape of an oriental folding screen, often used for indoor partition. Materials provided by John K. Lucy and Alexandra Yagilowich."
         },
         pictures: ["wind-shield.jpg"]
+      },
+      {
+        name: "'Fly' 2019",
+        url: "fly2019",
+        explanation: {
+          title: "'Fly' 2019",
+          materials: "Electronics",
+          explanation: "Attribute to Lord of the Flies, a 1954 novel by British author William Golding. The book focuses on a group of British boys stranded on an uninhabited island and their disastrous attempt to govern themselves. Themes include the tension between groupthink and individuality, between rational and emotional reactions, and between morality and immorality."
+        },
+        videoWistiaCode: "zmt9iz74ca"
       }
     ]
   },
