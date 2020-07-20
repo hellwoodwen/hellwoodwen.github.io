@@ -30,10 +30,10 @@ export default class Header extends React.Component {
           />
           <link
             rel="shortcut icon"
-            href="static/favicon.ico"
+            href="static/favicon3.ico"
             type="image/x-icon"
           ></link>
-          <link rel="icon" href="static/favicon.ico" type="image/x-icon"></link>
+          <link rel="icon" href="static/favicon3.ico" type="image/x-icon"></link>
           <link
             rel="stylesheet"
             type="text/css"
@@ -68,6 +68,9 @@ export default class Header extends React.Component {
               </ul>
               <li>
                 <a href="about">About</a>
+              </li>
+              <li>
+                <a href="collaborators">Collaborators</a>
               </li>
             </ul>
           </nav>
