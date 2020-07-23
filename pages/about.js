@@ -9,7 +9,7 @@ export default class extends React.Component {
                         <h2>Biography</h2>
 
                         <p>
-                        Wen Wen is a conceptual artist who delves into kinect sculpture and contemporary performance. Her works are inspired by ecological challenges, debates of social equality, and contemplations over the international political landscape.
+                            Wen Wen is a conceptual artist who delves into kinect sculpture and contemporary performance. Her works are inspired by ecological challenges, debates of social equality, and contemplations over the international political landscape.
                         </p>
                         <p>After studying at Shanghai University of Finance and Economics, and The Bartlett School of Architecture, UCL, she now continues her researches and trans-disciplinary practice in a nomadic fashion, channeling eccentricity into deadly aesthetics.
                         </p>
@@ -18,9 +18,13 @@ export default class extends React.Component {
                         <p>For enquiry please email</p>
                         <p>
                             <span>studio@hellwoodwen.com</span>
-                            <br />
-                            <br />
-                            <br />
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
                         </p>
                         <p>
                             <a href="https://www.instagram.com/hellwoodwen/?hl=en" className="instagram">

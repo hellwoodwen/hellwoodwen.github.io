@@ -2,6 +2,7 @@ import Head from "next/head"
 import contentTree from "../content/contentTree"
 import ActiveLink from "./LinksActiver"
 import Link from "next/link"
+import poems from "../pages/poems"
 
 export default class Header extends React.Component {
   constructor(props) {
@@ -65,6 +66,7 @@ export default class Header extends React.Component {
                     </li>
                   )
                 })}
+                <li><ActiveLink href="/poems"> Poems </ActiveLink></li>
               </ul>
               <li>
                 <a href="about">About</a>
