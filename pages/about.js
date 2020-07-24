@@ -9,9 +9,9 @@ export default class extends React.Component {
                         <h2>Biography</h2>
 
                         <p>
-                            Wen Wen is a conceptual artist who delves into kinect sculpture and contemporary performance. Her works are inspired by ecological challenges, debates of social equality, and contemplations over the international political landscape.
+                        Wen Wen is a conceptual artist who delves into kinect sculpture and contemporary performance. Their works are inspired by ecological challenges, debates of social equality, and contemplations over the international political landscape.
                         </p>
-                        <p>After studying at Shanghai University of Finance and Economics, and The Bartlett School of Architecture, UCL, she now continues her researches and trans-disciplinary practice in a nomadic fashion, channeling eccentricity into deadly aesthetics.
+                        <p>After studying at Shanghai University of Finance and Economics, and The Bartlett School of Architecture, UCL, they now continues researches and trans-disciplinary practice in a nomadic fashion, channeling eccentricity into deadly aesthetics.
                         </p>
 
                         <h2>Contact</h2>
