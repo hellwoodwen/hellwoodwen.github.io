@@ -131,7 +131,7 @@ export default [
           "0518_6.jpg",
           "0518_7.jpg",
           "0518_8.jpg",
-          "0518_9.jpg"
+          "0518_9.jpg",
         ]
       }
     ]
@@ -149,7 +149,8 @@ export default [
       "IMG_0843.jpg",
       "IMG_0847.jpg",
       "IMG_0848_sold.jpg",
-      "IMG_0850_sold.jpg"
+      "IMG_0850_sold.jpg",
+      "IMG_0860.jpg"
     ]
   }
 ]

@@ -71,13 +71,49 @@ export default class extends React.Component {
                             II very very dark moon is the spriggan of our planet never compromise ever stronger in solidarity we stand in transcendence we connect merge dissolve nil is soothing as we walk silently in tranquility</p>
                     </section>
                     <section className="columnspan-3">
-                        <h3>hush</h3>
-                        <p>when you are cut off for long enough dolphins in the ocean could you hear their babbles from afar? writing poems with the help of internet because English is not my mother language it works the same with mother tongue anyway words you don't remember a synonym that rhymes floating in a vacuum a life without purpose is like a ship without a radar Vikings navigate via the stars and their gods I'd wish there were never such concept the deity, theology why would there be something higher muffle in your pride</p>
-                        <p>
-                            and be happy as mammal</p>
-                        <p>
-                            you know, like a dolphin or something
-                        </p>
+                        <h3>Daily</h3>
+                        <p>Venus without arms<br/>
+                            Looked down upon by the children of goldsmith<br/>
+                            Laying on the abyss/hiatus<br/>
+                            A plume of silk<br/>
+                            Sitting afloat as a saviour<br/>
+                            Dark sarcasm and sweet love<br/>
+                            Spinning along mobius strip<br/>
+                            Overflowing imageries turn into disgust<br/>
+                            Youth start with the folly of admirations<br/>
+                            End with thorough understandings</p>
+                    </section>
+                    <section className="columnspan-3">
+                        <h3>Hush</h3>
+                        <p>when you are cut off for long enough
+                            <br/>
+                            dolphins in the ocean
+                            <br/>
+                            could you hear their babbles from afar?
+                            <br/>
+                            writing poems with the help of internet
+                            <br/>
+                            because English is not my mother language
+                            <br/>
+                            it works the same with mother tongue anyway
+                            <br/>
+                            words you don't remember
+                            <br/>
+                            a synonym that rhymes
+                            <br/>
+                            floating in vacuum
+                            <br/>
+                            a life without purpose is like a ship without a radar
+                            <br/>
+                            Vikings navigate via the stars and their gods
+                            <br/>
+                            I'd wish there were never such concept the deity, theology
+                            <br/>
+                            why would there be something higher
+                            <br/>
+                            muffle in your pride<br/>
+                            and be happy as a mammal<br/>
+                            you know, like a dolphin or something</p>
                     </section>
                     <style jsx>
                         {`
