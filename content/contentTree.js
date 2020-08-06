@@ -141,6 +141,7 @@ export default [
     url: "oilpainting",
     galleryType: "singleObject",
     content: [
+      "IMG_0860.jpg",
       "oil-painting-1.jpg",
       "oil-painting-2.jpg",
       "IMG_0837_sold.jpg",
@@ -149,8 +150,7 @@ export default [
       "IMG_0843.jpg",
       "IMG_0847.jpg",
       "IMG_0848_sold.jpg",
-      "IMG_0850_sold.jpg",
-      "IMG_0860.jpg"
+      "IMG_0850_sold.jpg"
     ]
   }
 ]

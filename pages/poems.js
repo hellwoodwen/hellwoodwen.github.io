@@ -7,7 +7,19 @@ export default class extends React.Component {
                 <main>
                     <section className="columnspan-3">
                         <h2>Poems</h2>
-
+                        <section className="columnspan-3">
+                        <h3>Daily</h3>
+                        <p>Venus without arms<br/>
+                            Looked down upon by the children of goldsmith<br/>
+                            Laying on the abyss/hiatus<br/>
+                            A plume of silk<br/>
+                            Sitting afloat as a saviour<br/>
+                            Dark sarcasm and sweet love<br/>
+                            Spinning along mobius strip<br/>
+                            Overflowing imageries turn into disgust<br/>
+                            Youth start with the folly of admirations<br/>
+                            End with thorough understandings</p>
+                    </section>
                         <h3>Koran</h3>
                         <p>Children with the third eye are lucid dreaming<br/>
                             Planes are assembled while they are in flight<br/>
@@ -67,22 +79,11 @@ export default class extends React.Component {
                         <p>I</p>
                         <p>
                             what is the safe word paranoid strikes as self-hocus in condescending pain terrible words bring worsening bleeding teeth it is my fault it has always been my fault there is no way out destructive weapons wearing comforting camouflage a spiral tunnel</p>
-                        <p>
-                            II very very dark moon is the spriggan of our planet never compromise ever stronger in solidarity we stand in transcendence we connect merge dissolve nil is soothing as we walk silently in tranquility</p>
+                           <p> II </p>
+                           <p>very very dark moon is the spriggan of our planet never compromise ever stronger in solidarity we stand in transcendence we connect merge dissolve nil is soothing as we walk silently in tranquility</p>
+
                     </section>
-                    <section className="columnspan-3">
-                        <h3>Daily</h3>
-                        <p>Venus without arms<br/>
-                            Looked down upon by the children of goldsmith<br/>
-                            Laying on the abyss/hiatus<br/>
-                            A plume of silk<br/>
-                            Sitting afloat as a saviour<br/>
-                            Dark sarcasm and sweet love<br/>
-                            Spinning along mobius strip<br/>
-                            Overflowing imageries turn into disgust<br/>
-                            Youth start with the folly of admirations<br/>
-                            End with thorough understandings</p>
-                    </section>
+
                     <section className="columnspan-3">
                         <h3>Hush</h3>
                         <p>when you are cut off for long enough
