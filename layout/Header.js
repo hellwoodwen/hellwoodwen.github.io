@@ -25,6 +25,7 @@ export default class Header extends React.Component {
       <React.Fragment>
         <Head>
           <title> {title} </title>
+          <meta name="keywords" content="happenings, fluxes, actionism, london, shanghai, chinese, live art, performance art"></meta>
           <meta
             name="viewport"
             content="width=device-width, initial-scale=1.0"
@@ -73,6 +74,9 @@ export default class Header extends React.Component {
               </li>
               <li>
                 <a href="collaborators">Collaborators</a>
+              </li>
+              <li>
+                <a href="eventsandexhibitions">Events and Exhibitions</a>
               </li>
             </ul>
           </nav>
