@@ -24,12 +24,17 @@ export default class extends React.Component {
                             13/12/2019</p>
 
                         <p>
+                            <h3>Rope Dart (Martial Arts); One Poi Dance</h3>
+                            Kulturanker Kunstfest der Modern, Stadthalle, Magdeburg<br/>
+                            15/09/2019</p>
+
+                        <p>
                             <h3>Semi-Conductivity</h3>
                             White Post Cafe, Building4, Schwarts Wharf, 92 White Post Ln, London E9 5EN<br/>
                             19/06/2019</p>
 
                         <p>
-                            <h3>Poi Dance Improvisations</h3>
+                            <h3>Poi Dance Improvisation</h3>
                             ‘Sense’ #5: Experiencing Colour, Grow Hackney, London E9 5LN<br/>
                             23/05/2019</p>
 
@@ -39,9 +44,16 @@ export default class extends React.Component {
                             22/09/2018</p>
 
                         <p>
-                            <h3>Poi Dance Improvisations</h3>
+                            <h3>Live Performance</h3>
+                            'Infringment', Mao Electronic, Shanghai<br/>
+                            27/07/2018</p>
+
+                        <p>
+                            <h3>Poi Dance Improvisation</h3>
                             ‘ReCharge’, Mao Live House, Shanghai<br/>
                             15/12/2017</p>
+
+
                         <br/>
                         <br/>
                         <h2>Collaborators</h2>
