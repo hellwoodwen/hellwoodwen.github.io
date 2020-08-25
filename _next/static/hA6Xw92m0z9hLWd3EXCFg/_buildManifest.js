@@ -1,1 +1,0 @@
-self.__BUILD_MANIFEST = (function(a){return {"/":[a],"/about":[a],"/conceptualperformance":[a],"/index":[a],"/oilpainting":[a]}}("static\u002Fchunks\u002F61d2c3bb2839e8b09102e857dd7b02b59d71fc05.bc60899296483c529b2e.js"));self.__BUILD_MANIFEST_CB && self.__BUILD_MANIFEST_CB()
