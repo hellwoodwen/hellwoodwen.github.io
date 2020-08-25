@@ -27,7 +27,7 @@ body {
 }
 
 a {
-  color: #646464;
+  color: black;
 }
 
 nav a {
@@ -40,7 +40,7 @@ nav a.actual {
 }
 
 p {
-  color: #6e6e6e;
+  color: black;
 }
 
 main {

@@ -73,10 +73,10 @@ export default class Header extends React.Component {
                 <a href="about">About</a>
               </li>
               <li>
-                <a href="collaborators">Collaborators</a>
+                <a href="eventsandexhibitions">Events and Exhibitions</a>
               </li>
               <li>
-                <a href="eventsandexhibitions">Events and Exhibitions</a>
+                <a href="collaborators">Collaborators</a>
               </li>
             </ul>
           </nav>
