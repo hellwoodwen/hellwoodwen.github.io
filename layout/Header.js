@@ -75,9 +75,6 @@ export default class Header extends React.Component {
               <li>
                 <a href="eventsandexhibitions">Events and Exhibitions</a>
               </li>
-              <li>
-                <a href="collaborators">Collaborators</a>
-              </li>
             </ul>
           </nav>
         </header>
