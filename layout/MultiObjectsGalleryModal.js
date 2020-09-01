@@ -31,8 +31,8 @@ export default class MultiObjectGalleryModal extends React.Component {
     }
 
     splitText = chain => {
-        const toReturn = chain ? chain.split("\n").map((item, i) => <p key={i}>
-            {item}</p>) : ""
+        const toReturn = chain ? chain.split("\n").map((item, i) => <span>
+            {item}</span>) : ""
         return toReturn
     }
 
@@ -118,7 +118,7 @@ export default class MultiObjectGalleryModal extends React.Component {
                         )
                     }
                         {
-                        this.splitText(projectInfo.explanation.explanation)
+                        <p>{this.splitText(projectInfo.explanation.explanation)}</p>
                     } </div>
                 )
             }
@@ -281,8 +281,8 @@ export default class MultiObjectGalleryModal extends React.Component {
               color: #d2d2d2;
             }
             p {
-              color: #878787;
               font-size: 0.9em;
+              color: white;
             }
             a.actual img {
               border-right: 5px solid #e7e7e7;
