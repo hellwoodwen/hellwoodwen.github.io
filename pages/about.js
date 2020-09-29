@@ -17,28 +17,14 @@ export default class extends React.Component {
                         <p>For enquiry please email</p>
                         <p>
                             <span>studio@hellwoodwen.com</span>
+                            <br/>
+                            <br/>
+                            <br/>
+                           
                         </p>
-                        <p>
-                            <a href="file" className="filelink">How Interactive Design Language Could Manifest Uncertainty</a>
-                        </p>
-                        <p>
-                            <h2>Abstract</h2>
-                            <p>We are no longer living in a three-dimensional linear form. Discourses in cybernetics and
-                                quantum mechanics have fundamentally changed our way of social organization. The
-                                philosophy, theory, and technology have enabled globalization and interstellqr
-                                explorations. It is essential to rethink the definition of the ‘fourth dimension’ in the everaccelerating
-                                modernity that thrusts human beings into deeper space.</p>
-                            <p>The first part of this paper analyzes the development of timekeeping devices in both
-                                current day and ancient epoch. Chapter Two discusses the concept, making and
-                                references considered in the design of Present Revisit; how it reflects the contemporary
-                                theories in spacetime and the notions of present, ephemerality and eternity. Chapter
-                                Three takes a reflexive angle to inspect the diminishing of permanence in contemporary
-                                social modes of organization. The last passage emphasizes some underlying theories in
-                                regard to performance, observation, system and interaction.
-                            </p>
-                            <br/>
-                            <br/>
-                            <br/>
+                        <p> <span className="thesistitle">Thesis</span><br />
+                            <a href="/static/files/wenwen_thesis_2020.pdf" className="filelink">
+                            How Interactive Design Language Could Manifest Uncertainty</a>
                             <br/>
                             <br/>
                             <br/>
@@ -80,6 +66,10 @@ export default class extends React.Component {
               .columnspan-3{
                 grid-column: 1 / -1;
               }
+
+              .thesistitle{
+                font-family: raleway-semibold;
+            }
             `} </style>
                 </main>
             </Layout>
