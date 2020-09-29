@@ -15,21 +15,19 @@ export default class extends React.Component {
 
                         <h2>Contact</h2>
                         <p>For enquiry please email</p>
+                        <span>studio@hellwoodwen.com</span>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <h2 className="thesistitle">Thesis</h2>
                         <p>
-                            <span>studio@hellwoodwen.com</span>
-                            <br/>
-                            <br/>
-                            <br/>
-                           
-                        </p>
-                        <p> <span className="thesistitle">Thesis</span><br />
                             <a href="/static/files/wenwen_thesis_2020.pdf" className="filelink">
-                            How Interactive Design Language Could Manifest Uncertainty</a>
-                            <br/>
-                            <br/>
-                            <br/>
-                            <br/>
+                                How Interactive Design Language Could Manifest Uncertainty</a>
                         </p>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
                         <p>
                             <a href="https://www.instagram.com/hellwoodwen/?hl=en" className="instagram icon">
                                 Instagram
@@ -67,9 +65,6 @@ export default class extends React.Component {
                 grid-column: 1 / -1;
               }
 
-              .thesistitle{
-                font-family: raleway-semibold;
-            }
             `} </style>
                 </main>
             </Layout>
