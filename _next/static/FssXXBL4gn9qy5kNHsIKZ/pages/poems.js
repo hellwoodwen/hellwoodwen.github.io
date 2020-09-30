@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[13],{L4Ta:function(n,w,o){(window.__NEXT_P=window.__NEXT_P||[]).push(["/poems",function(){return o("TSXY")}])}},[["L4Ta",0,2,1,3]]]);
