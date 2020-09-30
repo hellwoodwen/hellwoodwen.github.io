@@ -96,7 +96,7 @@ export default class extends React.Component {
               .thesistitle {
                 margin-bottom: -11px;
               }
-            `}{" "}
+            `}
           </style>
         </main>
       </Layout>
