@@ -31,7 +31,7 @@ export default class extends React.Component {
             <br />
             <br />
             <br />
-            <h2 className="thesistitle">Thesis</h2>
+            <h2 className="thesistitle"><a href="/static/files/wenwen_thesis_2020.pdf">Thesis</a></h2>
             <p>
               <a href="/static/files/wenwen_thesis_2020.pdf"
                 className="filelink"
