@@ -33,7 +33,8 @@ export default class extends React.Component {
             <br />
             <h2 className="thesistitle"><a href="/static/files/wenwen_thesis_2020.pdf">Thesis</a></h2>
             <p>
-              <a href="/static/files/wenwen_thesis_2020.pdf"
+              <a href="/static/files/wenwen_thesis_2021_01.pdf"
+                target="_blank"
                 className="filelink"
               >
                 How Interactive Design Language Could Manifest Uncertainty
