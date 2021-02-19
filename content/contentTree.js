@@ -48,7 +48,8 @@ export default [
           explanation:
             "Present Revisit is an interactive kinetic light sculpture in the form of a floating illuminated ellipse. The sculpture is a 3D depiction of the planetary orbit that forms the foundation of the concepts we traditionally understand as ‘time’: the days, months and years. The elliptic form also resembles the imagined trajectory of an electron that exemplifies the atomic world and evokes the finer gradations and measurements of time.\nThe asymmetry of the sculpture represents the imperfection of human world and the current materialistic reality. Diffused light effects around the ellipse represent simulations of the stars and planets shining in a night sky. The piece takes a minimalistic approach and calls to mind the vastness and silence outer space, a preview of the spacetime humanity might possibly inhabit in an era of progressive cosmic explorations.\nAn observer in the presence of the installation is able to manipulate and conduct the light patterns around the ellipse using gestural hand movements. Other behaviours of the sculpture include a glowing portal, symbolising a spacetime travel console for the near future."
         },
-        pictures: ["present-revisit-1.jpg", "present-revisit-2.jpg"]
+        pictures: ["present-revisit-1.jpg", "present-revisit-2.jpg"],
+        videoVimeoCode: ['496278891', '438499299']
       },
       {
         name: "Food Variation",
@@ -94,6 +95,18 @@ export default [
     url: "conceptualperformance",
     galleryType: "multiObjects",
     content: [
+      {
+        name: "Cement Park Live House 36th",
+        url: "cementpark",
+        explanation: '',
+        videoVimeoCode: ['505623655']
+      },
+      {
+        name: 'Limbo, 2018',
+        url: 'limbo',
+        explanation: '',
+        videoVimeoCode: ['505630539']
+      },
       {
         name: "Poi Dance Improvisations",
         url: "PoiDance",

@@ -2,170 +2,176 @@ import WistiaEmbed from '../components/wistia_embed'
 import NoSSR from 'react-no-ssr'
 
 export default class MultiObjectGalleryModal extends React.Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-            actualItem: 0
-        }
+  constructor(props) {
+    super(props)
+    this.state = {
+      actualItem: 0
+    }
+  }
+
+  changeNext = (event, totalElements) => {
+    event.preventDefault()
+    const updateItem = this.state.actualItem === totalElements - 1 ? 0 : this.state.actualItem + 1
+    this.setState({ actualItem: updateItem })
+  }
+
+  changePrev = (event, totalElements) => {
+    event.preventDefault()
+    const updateItem = this.state.actualItem === 0 ? totalElements - 1 : this.state.actualItem - 1
+    this.setState({ actualItem: updateItem })
+  }
+
+  changeElement = (event, picIndex) => {
+    event.preventDefault()
+    this.setState({ actualItem: picIndex })
+  }
+
+  getPicPath = (galUrl, ProjectUrl, folder, pictureName) => {
+    return `static/pics/${galUrl}/${ProjectUrl}/${folder}/${pictureName}`
+  }
+
+  splitText = chain => {
+    const toReturn = chain ? chain.split("\n").map((item, i) => <span>
+      {item}</span>) : ""
+    return toReturn
+  }
+
+  render() {
+    const { closeProject, projectInfo, galleryName } = this.props
+    const { actualItem } = this.state
+
+    let galleryElements = []
+    if (projectInfo.videoQqCode) {
+      galleryElements = [["QQvideo", projectInfo.videoQqCode]]
+    }
+    if (projectInfo.videoWistiaCode) {
+      galleryElements = [["WistiaVideo", projectInfo.videoWistiaCode]]
+    }
+    if (projectInfo.videoVimeoCode) {
+      projectInfo.videoVimeoCode.map(code => {
+        galleryElements.push(["VimeoVideo", code])
+      })
+    }
+    if (projectInfo.pictures) {
+      projectInfo.pictures.map(pic => {
+        galleryElements.push(["image", pic])
+      })
     }
 
-    changeNext = (event, totalElements) => {
-        event.preventDefault()
-        const updateItem = this.state.actualItem === totalElements - 1 ? 0 : this.state.actualItem + 1
-        this.setState({actualItem: updateItem})
-    }
+    const hasMultiplePictures = galleryElements.length > 1 ? true : false
+    const hasDescription = projectInfo.explanation !== "" ? true : false
+    let wrapperStyle = hasMultiplePictures ? "multiplePictures" : "singlePicture"
+    wrapperStyle += hasDescription ? " hasDescription" : " withoutDescription"
 
-    changePrev = (event, totalElements) => {
-        event.preventDefault()
-        const updateItem = this.state.actualItem === 0 ? totalElements - 1 : this.state.actualItem - 1
-        this.setState({actualItem: updateItem})
-    }
+    return (
+      <div id="modalGallery"
+        className={wrapperStyle}>
 
-    changeElement = (event, picIndex) => {
-        event.preventDefault()
-        this.setState({actualItem: picIndex})
-    }
-
-    getPicPath = (galUrl, ProjectUrl, folder, pictureName) => {
-        return `static/pics/${galUrl}/${ProjectUrl}/${folder}/${pictureName}`
-    }
-
-    splitText = chain => {
-        const toReturn = chain ? chain.split("\n").map((item, i) => <span>
-            {item}</span>) : ""
-        return toReturn
-    }
-
-    render() {
-        const {closeProject, projectInfo, galleryName} = this.props
-        const {actualItem} = this.state
-
-        let galleryElements = []
-        if (projectInfo.videoQqCode) {
-            galleryElements = [["QQvideo", projectInfo.videoQqCode]]
-        }
-        if (projectInfo.videoWistiaCode) {
-            galleryElements = [["WistiaVideo", projectInfo.videoWistiaCode]]
-        }
-        if (projectInfo.pictures) {
-            projectInfo.pictures.map(pic => {
-                galleryElements.push(["image", pic])
-            })
-        }
-
-        const hasMultiplePictures = galleryElements.length > 1 ? true : false
-        const hasDescription = projectInfo.explanation !== "" ? true : false
-        let wrapperStyle = hasMultiplePictures ? "multiplePictures" : "singlePicture"
-        wrapperStyle += hasDescription ? " hasDescription" : " withoutDescription"
-
-        return (
-            <div id="modalGallery"
-                className={wrapperStyle}>
-
-                <div id="picContainer">
-                    {
-                    galleryElements.length > 1 && (
-                        <div id="picCounter">
-                            {
-                            `${
-                                actualItem + 1
-                            } of ${
-                                galleryElements.length
-                            }`
-                        } </div>
-                    )
-                }
-                    {
-                    galleryElements[actualItem][0] === "image" && (
-                        <img src={
-                            this.getPicPath(galleryName, projectInfo.url, "big", galleryElements[actualItem][1])
-                        }/>
-                    )
-                }
-                    {
-                    galleryElements[actualItem][0] === "QQvideo" && (
-                        <iframe frameBorder="0"
-                            src={
-                                `https://v.qq.com/txp/iframe/player.html?vid=${
-                                    galleryElements[actualItem][1]
-                                }`
-                            }
-                            allowFullScreen={true}></iframe>
-                    )
-                }
-                    {
-                    galleryElements[actualItem][0] === "WistiaVideo" && (
-                        <NoSSR>
-                            <WistiaEmbed hashedId={
-                                    galleryElements[actualItem][1]
-                                }
-                                playerColor="#56be8e"/>
-                        </NoSSR>
-                    )
+        <div id="picContainer">
+          {
+            galleryElements.length > 1 && (
+              <div id="picCounter">
+                {
+                  `${actualItem + 1
+                  } of ${galleryElements.length
+                  }`
                 } </div>
-
-                {
-                hasDescription && (
-                    <div id="explanationBox">
-                        <h1>{
-                            projectInfo.explanation.title
-                        }</h1>
-                        {
-                        projectInfo.explanation.materials !== "" && (
-                            <span>{
-                                projectInfo.explanation.materials
-                            }</span>
-                        )
-                    }
-                        {
-                        <p>{this.splitText(projectInfo.explanation.explanation)}</p>
-                    } </div>
+            )
+          }
+          {
+            galleryElements[actualItem][0] === "image" && (
+              <img src={
+                this.getPicPath(galleryName, projectInfo.url, "big", galleryElements[actualItem][1])
+              } />
+            )
+          }
+          {
+            galleryElements[actualItem][0] === "QQvideo" && (
+              <iframe frameBorder="0"
+                src={
+                  `https://v.qq.com/txp/iframe/player.html?vid=${galleryElements[actualItem][1]
+                  }`
+                }
+                allowFullScreen={true}></iframe>
+            )
+          }
+          {
+            galleryElements[actualItem][0] === "WistiaVideo" && (
+              <NoSSR>
+                <WistiaEmbed hashedId={
+                  galleryElements[actualItem][1]
+                }
+                  playerColor="#56be8e" />
+              </NoSSR>
+            )
+          }
+          {
+            galleryElements[actualItem][0] === "VimeoVideo" && (
+              <iframe src={`https://player.vimeo.com/video/${galleryElements[actualItem][1]}`} frameborder={"0"} allow={"autoplay; fullscreen"} allowfullscreen={true}></iframe>
+            )
+          }</div>
+        {
+          hasDescription && (
+            <div id="explanationBox">
+              <h1>{
+                projectInfo.explanation.title
+              }</h1>
+              {
+                projectInfo.explanation.materials !== "" && (
+                  <span>{
+                    projectInfo.explanation.materials
+                  }</span>
                 )
-            }
+              }
+              {
+                <p>{this.splitText(projectInfo.explanation.explanation)}</p>
+              } </div>
+          )
+        }
 
-                {
-                hasMultiplePictures && (
-                    <div id="navBar">
-                        <div id="modalPrev" className="modalButton">
-                            <a onClick={
-                                e => this.changePrev(e, galleryElements.length)
-                            }>
-                                Previous
+        {
+          hasMultiplePictures && (
+            <div id="navBar">
+              <div id="modalPrev" className="modalButton">
+                <a onClick={
+                  e => this.changePrev(e, galleryElements.length)
+                }>
+                  Previous
                             </a>
-                        </div>
-                        <div id="navThumbs">
-                            {
-                            galleryElements.map((element, index) => {
-                                const aStyle = index === actualItem ? "actual" : ""
-                                const picURL = element[0] === "image" ? element[1] : "video-default.jpg"
-                                return (
-                                    <a onClick={
-                                            e => this.changeElement(e, index, element[0])
-                                        }
-                                        className={aStyle}
-                                        key={index}>
-                                        <img src={
-                                            this.getPicPath(galleryName, projectInfo.url, "th", picURL)
-                                        }/>
-                                    </a>
-                                )
-                            })
-                        } </div>
-                        <div id="modalNext" className="modalButton">
-                            <a onClick={
-                                e => this.changeNext(e, galleryElements.length)
-                            }>Next</a>
-                        </div>
-                    </div>
-                )
-            }
+              </div>
+              <div id="navThumbs">
+                {
+                  galleryElements.map((element, index) => {
+                    const aStyle = index === actualItem ? "actual" : ""
+                    const picURL = element[0] === "image" ? element[1] : "video-default.jpg"
+                    return (
+                      <a onClick={
+                        e => this.changeElement(e, index, element[0])
+                      }
+                        className={aStyle}
+                        key={index}>
+                        <img src={
+                          this.getPicPath(galleryName, projectInfo.url, "th", picURL)
+                        } />
+                      </a>
+                    )
+                  })
+                } </div>
+              <div id="modalNext" className="modalButton">
+                <a onClick={
+                  e => this.changeNext(e, galleryElements.length)
+                }>Next</a>
+              </div>
+            </div>
+          )
+        }
 
-                <div id="modalClose" className="modalButton">
-                    <a onClick={closeProject}>Close</a>
-                </div>
+        <div id="modalClose" className="modalButton">
+          <a onClick={closeProject}>Close</a>
+        </div>
 
-                <style jsx>
-                    {`
+        <style jsx>
+          {`
             #modalGallery {
               position: fixed;
               top: 0;
@@ -345,7 +351,7 @@ export default class MultiObjectGalleryModal extends React.Component {
               }
             }
           `} </style>
-            </div>
-        )
-    }
+      </div>
+    )
+  }
 }
