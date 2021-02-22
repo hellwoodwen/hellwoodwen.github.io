@@ -67,6 +67,11 @@ export default class extends React.Component {
               >
                 UCL
               </a>
+              <a href="https://soundcloud.com/hellwoodwen"
+                className="soundcloud icon">
+                SoundCloud
+              </a>
+              <a href="https://vimeo.com/hellwood" className="vimeo icon"> https://vimeo.com/hellwood</a>
             </p>
           </section>
           <style jsx>
@@ -90,6 +95,12 @@ export default class extends React.Component {
               }
               a.ucl {
                 background: url(/static/css/ucl-small.png) left top no-repeat;
+              }
+              a.soundcloud{
+                background: url(/static/css/soundcloud-small.png) left top no-repeat;
+              }
+              a.vimeo{
+                background: url(/static/css/vimeo-logo-small.png) left top no-repeat;
               }
               .columnspan-3 {
                 grid-column: 1 / -1;

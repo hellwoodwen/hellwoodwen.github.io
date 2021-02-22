@@ -10,52 +10,55 @@ export default class extends React.Component {
 
                         <p>
                             <h3>Cement Park Live House 100TH LONDON</h3>
-                            Ridley Road Social Club, 89 Ridley Road, Dalston, London E8 2NH<br/>
+                            Ridley Road Social Club, 89 Ridley Road, Dalston, London E8 2NH<br />
                             30/08/2020</p>
 
                         <p>
                             <h3>Present Revisit</h3>
-                            ‘Love is Not for Sale’, Page Green Road, London N15 4PG<br/>
+                            ‘Love is Not for Sale’, Page Green Road, London N15 4PG<br />
                             15/02/2020</p>
 
                         <p>
                             <h3>Present Revisit</h3>
-                            ‘Fifteen Show’, 22 Gordon St., Bloomsbury, London WC1H 0QB<br/>
+                            ‘Fifteen Show’, 22 Gordon St., Bloomsbury, London WC1H 0QB<br />
                             13/12/2019</p>
 
                         <p>
                             <h3>Rope Dart (Martial Arts); One Poi Dance</h3>
-                            Kulturanker Kunstfest der Modern, Stadthalle, Magdeburg<br/>
+                            Kulturanker Kunstfest der Modern, Stadthalle, Magdeburg<br />
                             15/09/2019</p>
 
                         <p>
                             <h3>Semi-Conductivity</h3>
-                            White Post Cafe, Building4, Schwarts Wharf, 92 White Post Ln, London E9 5EN<br/>
+                            White Post Cafe, Building4, Schwarts Wharf, 92 White Post Ln, London E9 5EN<br />
                             19/06/2019</p>
 
                         <p>
                             <h3>Poi Dance Improvisation</h3>
-                            ‘Sense’ #5: Experiencing Colour, Grow Hackney, London E9 5LN<br/>
+                            ‘Sense’ #5: Experiencing Colour, Grow Hackney, London E9 5LN<br />
                             23/05/2019</p>
 
                         <p>
                             <h3>Evolvement</h3>
-                            ‘Brain Fair’, Expo Garden, 388 Bansongyuan Road, Huangpu District, Shanghai<br/>
+                            ‘Brain Fair’, Expo Garden, 388 Bansongyuan Road, Huangpu District, Shanghai<br />
                             22/09/2018</p>
 
                         <p>
                             <h3>Live Performance</h3>
-                            'Infringment', Mao Electronic, Shanghai<br/>
+                            'Infringment', Mao Electronic, Shanghai<br />
                             27/07/2018</p>
 
                         <p>
                             <h3>Poi Dance Improvisation</h3>
-                            ‘ReCharge’, Mao Live House, Shanghai<br/>
+                            ‘ReCharge’, Mao Live House, Shanghai<br />
                             15/12/2017</p>
+                        <p>
+                            <h3>Poi Performance</h3>
+                            Dragon Burn Fundraising, The Pearl, Shanghai<br />
+                            27/04/2017</p>
 
-
-                        <br/>
-                        <br/>
+                        <br />
+                        <br />
                         <h2>Collaborators</h2>
                         <p>
                             <b>Sarah Ali</b>

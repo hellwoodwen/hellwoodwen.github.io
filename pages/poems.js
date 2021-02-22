@@ -7,7 +7,7 @@ export default class extends React.Component {
                 <main>
                     <section className="columnspan-3">
                         <h2>Poems</h2>
-                        <section className="columnspan-3">
+                        <section className="poem">
                             <h3>Daily</h3>
                             <p>Venus without arms<br />
                             Looked down upon by the children of goldsmith<br />
@@ -20,8 +20,9 @@ export default class extends React.Component {
                             Youth start with the folly of admirations<br />
                             End with thorough understandings</p>
                         </section>
-                        <h3>Koran</h3>
-                        <p>Children with the third eye are lucid dreaming<br />
+                        <section className="poem">
+                            <h3>Koran</h3>
+                            <p>Children with the third eye are lucid dreaming<br />
                             Planes are assembled while they are in flight<br />
                             Always easier to write on back than on the front<br />
                             Life has loops and you can break
@@ -39,12 +40,11 @@ export default class extends React.Component {
                             Silent killer<br />
                             Cocaine powder<br />
                             Abel grained flour<br />
-                        </p>
-
-                    </section>
-                    <section className="columnspan-3">
-                        <h3>people think I’m sliding</h3>
-                        <p>I might look like sliding<br />
+                            </p>
+                        </section>
+                        <section className="poem">
+                            <h3>People think I’m sliding</h3>
+                            <p>I might look like sliding<br />
                             Or people think that way
                             <br />
                             In fact I am surfing
@@ -72,21 +72,19 @@ export default class extends React.Component {
                             <br />
                             live in constant fluxes<br />
                             and you won’t have any problems of life and death, nor money, nor love<br />
-                        </p>
-                    </section>
-                    <section className="columnspan-3">
-                        <h3>Wanning Crescent</h3>
-                        <p>I</p>
-                        <p>
-                            what is the safe word paranoid strikes as self-hocus in condescending pain terrible words bring worsening bleeding teeth it is my fault it has always been my fault there is no way out destructive weapons wearing comforting camouflage a spiral tunnel</p>
-                        <p> II </p>
-                        <p>very very dark moon is the spriggan of our planet never compromise ever stronger in solidarity we stand in transcendence we connect merge dissolve nil is soothing as we walk silently in tranquility</p>
-
-                    </section>
-
-                    <section className="columnspan-3">
-                        <h3>Hush</h3>
-                        <p>when you are cut off for long enough
+                            </p>
+                        </section>
+                        <section className="poem">
+                            <h3>Wanning Crescent</h3>
+                            <p>I</p>
+                            <p>
+                                what is the safe word paranoid strikes as self-hocus in condescending pain terrible words bring worsening bleeding teeth it is my fault it has always been my fault there is no way out destructive weapons wearing comforting camouflage a spiral tunnel</p>
+                            <p> II </p>
+                            <p>very very dark moon is the spriggan of our planet never compromise ever stronger in solidarity we stand in transcendence we connect merge dissolve nil is soothing as we walk silently in tranquility</p>
+                        </section>
+                        <section className="poem">
+                            <h3>Hush</h3>
+                            <p>when you are cut off for long enough
                         <br />
                             dolphins in the ocean
                             <br />
@@ -115,18 +113,18 @@ export default class extends React.Component {
                             muffle in your pride<br />
                             and be happy as a mammal<br />
                             you know, like a dolphin or something</p>
-                    </section>
-                    <section className="columnspan-3">
-                        <h3>Pre-History No Memory</h3>
-                        <p>
-                            The Zerg swarms and the protoss teleports<br />
+                        </section>
+                        <section className="poem">
+                            <h3>Pre-History No Memory</h3>
+                            <p>
+                                The Zerg swarms and the protoss teleports<br />
                         Attempting for balance in the midland of terrans<br />
                         The shadow underlines a unpenetrable dark core<br />
                         Energy waves are tangent to its edge<br />
                         Thick and calm inside<br />
                         Pipping hot<br />
                         A scene only visible after the explosion<br />
-                            <br />
+                                <br />
                         The long bursts of Gamma-rays contain information<br />
                         Butterflies break from cocoons<br />
                         Clouds carry on slowly in front of a blue sky background<br />
@@ -139,46 +137,46 @@ export default class extends React.Component {
                         Like a sharpened pencil<br />
                         It could only break<br />
                         There is no going back</p>
-                    </section>
-                    <section className="columnspan-3">
-                        <h3>How I Became A Successful ShiRen</h3>
-                        <p>
-                            Crispy elephants<br />
+                        </section>
+                        <section className="poem">
+                            <h3>How I Became A Successful ShiRen</h3>
+                            <p>
+                                Crispy elephants<br />
                         Swimming in the pool of livers<br />
                         Crushing dry leaves as they ascend from blood-filled pond<br />
                         Walking down the path with grace<br />
-                            <br />
+                                <br />
                         Hangedup<br />
                         In hanging coffins<br />
                         Against mountain rocks<br />
                         Lying in a box on wood beams hammered onto cliffs<br />
-                            <br />
+                                <br />
                         A leap of faith<br />
                         The cliff of death<br />
                         Five  star<br />
                         Four five-pointed star<br />
                         A pentagon coffin constructed with pea-nut<br />
-                            <br />
+                                <br />
                         Chinese characters are written in squares<br />
                         Our intrinsic nature, four sides<br />
                         A spy, a gangsta, a plant, a can<br />
                         Throwing scalp scurf into snow flake ice line<br />
-                            <br />
+                                <br />
                         Ice nine ice nine<br />
                         Turn marshes into solid land<br />
                         You ask me why i speak like an american<br />
                         Cause doller doller<br />
                         Great britain tattler<br />
-                            <br />
+                                <br />
                         Come come,<br />
                         Let's have some tea<br />
                         I rest in power<br />
                         You rest in my pea</p>
-                    </section>
-                    <section className="columnspan-3">
-                        <h3>Ward</h3>
-                        <p>
-                            Drum stick chicken thighs<br />
+                        </section>
+                        <section className="poem">
+                            <h3>Ward</h3>
+                            <p>
+                                Drum stick chicken thighs<br />
                         Cheap legging keeps my tight<br />
                         In the cold English weather<br />
                         We saw the trains coming<br />
@@ -195,12 +193,16 @@ export default class extends React.Component {
                         Look after yourself and don't let them throw stones in your well<br />
                         Your wallet<br />
                         Your heart<br />
-                        </p>
+                            </p>
+                        </section>
                     </section>
                     <style jsx>
                         {`
               .columnspan-3{
                 grid-column: 1 / -1;
+              }
+              .poem{
+                  margin-bottom: 53px;
               }
             `} </style>
                 </main>
