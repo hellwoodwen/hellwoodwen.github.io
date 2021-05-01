@@ -31,9 +31,9 @@ export default class extends React.Component {
             <br />
             <br />
             <br />
-            <h2 className="thesistitle"><a href="/static/files/wenwen_thesis_2020.pdf">Thesis</a></h2>
+            <h2 className="thesistitle"><a href="/static/files/How_Interactive_Design_Language_Could_Manifest_Uncertainty.pdf" target="_blank">Thesis</a></h2>
             <p>
-              <a href="/static/files/wenwen_thesis_2021_01.pdf"
+              <a href="/static/files/How_Interactive_Design_Language_Could_Manifest_Uncertainty.pdf"
                 target="_blank"
                 className="filelink"
               >
@@ -107,6 +107,9 @@ export default class extends React.Component {
               }
               .thesistitle {
                 margin-bottom: -11px;
+              }
+              a{
+                text-decoration: none;
               }
             `}
           </style>
