@@ -8,6 +8,19 @@ export default class extends React.Component {
                     <section className="columnspan-3">
                         <h2>Poems</h2>
                         <section className="poem">
+                            <h3>Improvisation</h3>
+                            <p>This<br />
+                            This is the best life has to offer <br />
+                            Yet you start to question yourself <br />
+                            There must be something else <br />
+                            Out there reereee <br />
+                            Reverberations feedback on it self <br />
+                            Redundancy induces ultimate abandon <br />
+                            Should we resort to nihilism for easiness<br />
+                            Outlandish notes mark a diagram <br />
+                            In which our route is thus observed and reflected</p>
+                        </section>
+                        <section className="poem">
                             <h3>Daily</h3>
                             <p>Venus without arms<br />
                             Looked down upon by the children of goldsmith<br />

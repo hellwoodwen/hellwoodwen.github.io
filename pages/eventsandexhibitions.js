@@ -7,6 +7,10 @@ export default class extends React.Component {
                 <main>
                     <section className="columnspan-3">
                         <h2>Events and Exhibitions</h2>
+                        <p>
+                            <h3>Dreamscape</h3>
+                            Ridley Road Social Club, 89 Ridley Road, Dalston, London E8 2NH<br />
+                            26/02/2022 - 10/03/2022</p>
 
                         <p>
                             <h3>Cement Park Live House 100TH LONDON</h3>

@@ -8,7 +8,8 @@
     "dev": "next",
     "build": "next build && next export",
     "start": "next start",
-    "now": "now"
+    "now": "now",
+    "deploy":"gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -20,7 +21,7 @@
   "bugs": {
     "url": "https://github.com/hellwoodwen/hellwoodwen.github.io/issues"
   },
-  "homepage": "https://github.com/hellwoodwen/hellwoodwen.github.io#readme",
+  "homepage": "https://github.com/hellwoodwen/hellwoodwen.github.io",
   "dependencies": {
     "isomorphic-fetch": "^2.2.1",
     "next": "^9.4.4",
@@ -29,5 +30,8 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-no-ssr": "^1.1.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
