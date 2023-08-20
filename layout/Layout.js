@@ -44,7 +44,7 @@ export default class Layout extends React.Component {
                 {
                 ! galleryData && children
             }
-                <div id="footer">All rights reserved ©. Powered by W. 2022</div>
+                <div id="footer">All rights reserved ©. Powered by W. 2023</div>
                 <style jsx>
                     {`
             #generalContainer {
