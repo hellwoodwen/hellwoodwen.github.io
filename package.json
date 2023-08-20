@@ -25,7 +25,7 @@
   "homepage": "https://github.com/hellwoodwen/hellwoodwen.github.io",
   "dependencies": {
     "isomorphic-fetch": "^2.2.1",
-    "next": "^9.4.4",
+    "next": "^13.4.19",
     "now": "^17.1.1",
     "nprogress": "^0.2.0",
     "react": "^16.13.1",
