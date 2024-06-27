@@ -9,15 +9,15 @@ export default class extends React.Component {
             <h2>Biography</h2>
 
             <p>
-             wen is transdisciplinary artist. An immigrant. A proletariat.
+              Wen is transdisciplinary artist. An immigrant. A proletariat.
             </p>
 
             <p>
-              They practice at the intersection of language, architecture, and identity. Wen utilise cement as an industrial vehicle seeking to flatten the hiatus between feudalism and capitalism in contemporary chinese context. Their pseudo name "hellwood" is a parody of orthodox western mentality which phonetically equals to their teenage web avatar in Chinese language. 
-              
-      <br />
-      
-             Via the juxtaposition and minimalistic composition of industrial materials, Wen attempt to attest to a contemporary state of being that is oftentimes alienating. Their satiric works solicit senses of destruction and abandonment, thus bring attention to pressing environmental issues.
+              They practice at the intersection of language, architecture, and identity. Wen utilise cement as an industrial vehicle seeking to flatten the hiatus between feudalism and capitalism in contemporary chinese context. Their pseudo name "hellwood" is a parody of orthodox western mentality which phonetically equals to their teenage web avatar in Chinese language.
+
+              <br />
+
+              Via the juxtaposition and minimalistic composition of industrial materials, Wen attempt to attest to a contemporary state of being that is oftentimes alienating. Their satiric works solicit senses of destruction and abandonment, thus bring attention to pressing environmental issues.
             </p>
 
             <h2>Contact</h2>
