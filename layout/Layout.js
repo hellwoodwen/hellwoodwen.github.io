@@ -20,31 +20,30 @@ export default class Layout extends React.Component {
     }
 
     render() {
-        const {children, galleryName} = this.props
+        const { children, galleryName } = this.props
         const galleryData = this.getInfo(galleryName)
 
         return (
             <div id="generalContainer">
                 {
-                galleryData && <Header title={
-                    `Wenwen - ${
-                        galleryData.name
-                    }`
-                }/>
-            }
+                    galleryData && <Header title={
+                        `Wenwen - ${galleryData.name
+                        }`
+                    } />
+                }
                 {
-                galleryData && (
-                    <Main galleryData={galleryData}
-                        galleryName={galleryName}/>
-                )
-            }
+                    galleryData && (
+                        <Main galleryData={galleryData}
+                            galleryName={galleryName} />
+                    )
+                }
                 {
-                ! galleryData && <Header title="Wenwen - About"/>}
-            
+                    !galleryData && <Header title="Wenwen - About" />}
+
                 {
-                ! galleryData && children
-            }
-                <div id="footer">All rights reserved ©. Powered by W. 2023</div>
+                    !galleryData && children
+                }
+                <div id="footer">All rights reserved ©. Powered by W. 2024</div>
                 <style jsx>
                     {`
             #generalContainer {

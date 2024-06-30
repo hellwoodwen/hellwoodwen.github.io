@@ -63,36 +63,7 @@ export default class extends React.Component {
 
                         <br />
                         <br />
-                        <h2>Collaborators</h2>
-                        <p>
-                            <b>Sarah Ali</b>
-                            -
-                            <a href="https://www.sarahaliportfolio.com/" target="_blank">https://www.sarahaliportfolio.com</a>
-                        </p>
 
-                        <p>
-                            <b>John Lucy</b>
-                            -
-                            <a href="https://jklucy.com/">https://jklucy.com/</a>
-                        </p>
-                        <p>
-                            <b>Fu QianHua</b>
-                            -
-                            <a href="https://www.fuqianhua.com/">https://www.fuqianhua.com/</a>
-                        </p>
-                        <p>
-                            <b>Quy Phung Ta</b>
-                            -
-                            <a href="https://quyphungta.com/">https://quyphungta.com/</a>
-                        </p>
-
-
-                        <p>
-                            <b>Cement Park</b>
-                            -
-                            <a href="https://1225675665.wixsite.com/cementpark">
-                                https://1225675665.wixsite.com/cementpark</a>
-                        </p>
                     </section>
                     <style jsx>
                         {`

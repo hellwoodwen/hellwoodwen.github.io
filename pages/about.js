@@ -9,19 +9,14 @@ export default class extends React.Component {
             <h2>Biography</h2>
 
             <p>
-              Wen Wen is a conceptual artist who delves into kinectic sculpture
-              and contemporary performance. Their works are inspired by
-              ecological challenges, debates of social equality, and
-              contemplations over the international political landscape.
+              Wen is transdisciplinary artist. An immigrant. A proletariat.
             </p>
 
             <p>
-              After studying at Shanghai University of Finance and Economics,
-              and The Bartlett School of Architecture, University College
-              London, they now continues researches and trans-disciplinary
-              practice in a nomadic fashion, channeling eccentricity into deadly
-              aesthetics.
+              They practice at the intersection of language, architecture, and identity. Wen utilise cement as an industrial vehicle seeking to flatten the hiatus between feudalism and capitalism in contemporary chinese context. Their pseudo name "hellwood" is a parody of orthodox western mentality which phonetically equals to their teenage web avatar in Chinese language.
             </p>
+
+            <p>Via the juxtaposition and minimalistic composition of industrial materials, Wen attempt to attest to a contemporary state of being that is oftentimes alienating. Their satiric works solicit senses of destruction and abandonment, thus bring attention to pressing environmental issues.</p>
 
             <h2>Contact</h2>
             <p>For enquiry please email</p>
