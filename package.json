@@ -6,11 +6,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "next",
-    "dev-leg" : "set NODE_OPTIONS=--openssl-legacy-provider && npm run dev",
+    "dev-leg": "set NODE_OPTIONS=--openssl-legacy-provider && npm run dev",
     "build": "next build && next export",
     "start": "next start",
     "now": "now",
-    "deploy":"gh-pages -d build"
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -34,5 +34,8 @@
   },
   "devDependencies": {
     "gh-pages": "^4.0.0"
+  },
+  "engines": {
+    "node": "18.x"
   }
 }
