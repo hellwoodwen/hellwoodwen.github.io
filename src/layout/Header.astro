@@ -10,8 +10,8 @@
     </nav>
 </header>
 <script>
-    document.querySelector("header").addEventListener("click", () => {
+    document.querySelector("header")?.addEventListener("click", () => {
         console.log("miau");
-        document.querySelector("nav").classList.toggle("open");
+        document.querySelector("nav")?.classList.toggle("open");
     });
 </script>
