@@ -1,6 +1,90 @@
 ---
+const allWorks = await Astro.glob("../pages/works/*.md")
+const categories: { url?: string; category: string }[] = []
+
+allWorks.forEach((work) => {
+	const { category } = work.frontmatter
+	if (categories.every((cat) => cat.category !== category)) {
+		categories.push({
+			url: work.url,
+			category,
+		})
+	}
+})
 ---
+
 <header>
-  <nav>
-  </nav>
+	<h1><a href="/">Wenwen</a></h1>
+	<nav>
+		<ul class="nav-first-level">
+			<li>
+				Works
+				<ul class="nav-second-level">
+					{
+						categories.map((category) => {
+							if (!category.url) return null
+							return (
+								<li>
+									<a href={category.url}>{category.category}</a>
+								</li>
+							)
+						})
+					}
+				</ul>
+			</li>
+			<li>About</li>
+			<li>Events and Exhibitions</li>
+		</ul>
+	</nav>
 </header>
+
+<script>
+	document.querySelector("header")?.addEventListener("click", () => {
+		document.querySelector("nav")?.classList.toggle("open")
+	})
+</script>
+
+<style>
+	header {
+		position: relative;
+		padding: 0.1rem 0.8rem;
+		background: url("../assets/styles/icon-menu.gif") no-repeat center right
+			1rem;
+		border-bottom: 1px solid #c4c4c4;
+	}
+
+	header h1 a{
+		text-decoration: none;
+		color: black;
+		font-family: "Raleway-black";
+	}
+	nav {
+		width: 100vw;
+		max-height: 0;
+		margin: 0 -0.8rem;
+		position: absolute;
+		overflow: hidden;
+		background-color: white;
+		transition: all 0.3s;
+	}
+
+	nav a {
+		text-decoration: none;
+	}
+
+	nav.open {
+		max-height: 200px;
+		padding: 1rem 0;
+	}
+
+	nav li {
+		list-style: none;
+		font-weight: bold;
+		margin-bottom: 1rem;
+	}
+
+	ul.nav-second-level li {
+		font-weight: normal;
+		margin-top: 1rem;
+	}
+</style>

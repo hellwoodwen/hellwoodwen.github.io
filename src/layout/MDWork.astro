@@ -1,0 +1,18 @@
+---
+import Global from './Global.astro';
+import Header from '../components/Header.astro'
+const { frontmatter } = Astro.props;
+
+---
+<Global pageTitle={frontmatter.title}>
+  <div class="work-gallery">
+    <img src={`/images/${frontmatter.gallery[0]}`} />
+  </div>
+  <h2>{frontmatter.title}</h2>
+  <div class="work-description">
+    {frontmatter.description}
+  </div>
+  <div class="work-content">
+    <slot />
+  </div>
+</Global>

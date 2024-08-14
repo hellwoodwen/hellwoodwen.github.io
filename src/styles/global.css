@@ -1,7 +1,6 @@
 @font-face {
-    font-family: "Raleway";
+    font-family: "Raleway-black";
     src: url("../assets/fonts/Raleway-Black.ttf");
-    font-weight: bolder;
 }
 
 @font-face {
@@ -18,21 +17,4 @@
 
 body{
     font-family: "Raleway", Verdana, Geneva, Tahoma, sans-serif;
-}
-
-header {
-    position: relative;
-    padding: 0.6rem 0.8rem;
-    background: url("../assets/styles/icon-menu.gif") no-repeat center right 1rem;
-}
-
-header nav {
-    max-height: 0;
-    position: absolute;
-    overflow: hidden;
-    transition: all 0.3s;
-}
-
-header nav.open{
-    max-height: 200px;
 }
