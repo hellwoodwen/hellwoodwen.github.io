@@ -7,6 +7,7 @@ image:
     url: '/images/th/Semi-Conductivity.jpg'
     alt: 'Semi-Conductivity'
 category: "Sculpture & Interactive Installation"
+order: 0
 gallery: [
     "Semi-Conductivity-1.jpg",
     "Semi-Conductivity-2.jpg",
