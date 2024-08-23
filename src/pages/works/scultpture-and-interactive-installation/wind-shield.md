@@ -1,5 +1,5 @@
 ---
-layout: ../../layout/MDWork.astro
+layout: ../../../layout/MDWork.astro
 title: 'Wind Shield'
 year: 2018
 image:

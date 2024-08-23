@@ -1,5 +1,5 @@
 ---
-layout: ../../layout/MDWork.astro
+layout: ../../../layout/MDWork.astro
 title: 'Body Sequencer'
 year: 2019
 image:

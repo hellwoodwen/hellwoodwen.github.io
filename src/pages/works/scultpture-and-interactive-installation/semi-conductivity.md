@@ -1,5 +1,5 @@
 ---
-layout: ../../layout/MDWork.astro
+layout: ../../../layout/MDWork.astro
 title: 'Semi-Conductivity'
 year: 2019
 description: 'Customized electronics, polyester stripes, steel stands, connection bits and cabling.'

@@ -1,18 +1,3 @@
----
-const allWorks = await Astro.glob("../pages/works/*.md")
-const categories: { url?: string; category: string }[] = []
-
-allWorks.forEach((work) => {
-	const { category } = work.frontmatter
-	if (categories.every((cat) => cat.category !== category)) {
-		categories.push({
-			url: work.url,
-			category,
-		})
-	}
-})
----
-
 <header>
 	<h1><a href="/">Wenwen</a></h1>
 	<nav>
@@ -20,19 +5,19 @@ allWorks.forEach((work) => {
 			<li>
 				Works
 				<ul class="nav-second-level">
-					{
-						categories.map((category) => {
-							if (!category.url) return null
-							return (
-								<li>
-									<a href={category.url}>{category.category}</a>
-								</li>
-							)
-						})
-					}
+					<li>
+						<a href="/works/scultpture-and-interactive-installation"
+							>Sculpture & Interactive Installation</a
+						>
+					</li>
+					<li>
+						<a href="/works/conceptual-performance">Conceptual Performance</a>
+					</li>
 				</ul>
 			</li>
-			<li>About</li>
+			<li>
+				<a href="/about">About</a>
+			</li>
 			<li>Events and Exhibitions</li>
 		</ul>
 	</nav>
@@ -53,7 +38,7 @@ allWorks.forEach((work) => {
 		border-bottom: 1px solid #c4c4c4;
 	}
 
-	header h1 a{
+	header h1 a {
 		text-decoration: none;
 		color: black;
 		font-family: "Raleway-black";
@@ -73,8 +58,9 @@ allWorks.forEach((work) => {
 	}
 
 	nav.open {
-		max-height: 200px;
+		max-height: 300px;
 		padding: 1rem 0;
+		box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 	}
 
 	nav li {

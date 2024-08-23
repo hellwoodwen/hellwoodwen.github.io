@@ -1,5 +1,5 @@
 ---
-layout: ../../layout/MDWork.astro
+layout: ../../../layout/MDWork.astro
 title: 'Food Variation'
 year: 2018
 description: Paperboard, rope, plant fiber glue, yogurt melts.
