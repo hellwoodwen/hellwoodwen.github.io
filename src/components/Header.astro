@@ -1,3 +1,6 @@
+---
+
+---
 <header>
 	<h1><a href="/">Wenwen</a></h1>
 	<nav>
@@ -6,19 +9,32 @@
 				Works
 				<ul class="nav-second-level">
 					<li>
-						<a href="/works/scultpture-and-interactive-installation"
-							>Sculpture & Interactive Installation</a
+						<a
+							href="/works/scultpture-and-interactive-installation"
+							class={Astro.url.pathname === "/works/scultpture-and-interactive-installation" ? "active" : "normal"}
+						>Sculpture & Interactive Installation</a
 						>
 					</li>
 					<li>
-						<a href="/works/conceptual-performance">Conceptual Performance</a>
+						<a
+							href="/works/conceptual-performance"
+							class={Astro.url.pathname === "/works/conceptual-performance" ? "active" : "normal"}
+						>Conceptual Performance</a>
 					</li>
 				</ul>
 			</li>
 			<li>
-				<a href="/about">About</a>
+				<a
+					href="/about"
+					class={Astro.url.pathname === "/about" ? "active" : "normal"}
+				>About</a>
 			</li>
-			<li>Events and Exhibitions</li>
+			<li>
+				<a
+					href="/events-and-exhibitions"
+					class={Astro.url.pathname === "/events-and-exhibitions" ? "active" : "normal"}
+				>Events and Exhibitions</a>
+			</li>
 		</ul>
 	</nav>
 </header>
@@ -55,6 +71,11 @@
 
 	nav a {
 		text-decoration: none;
+		color: black;
+	}
+
+	nav a.active{
+		font-weight: bold;
 	}
 
 	nav.open {

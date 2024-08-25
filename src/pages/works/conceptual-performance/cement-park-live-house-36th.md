@@ -7,4 +7,5 @@ image:
     alt: 'Semi-Conductivity'
 category: "Conceptual Performance"
 order: 0
+gallery: []
 ---
