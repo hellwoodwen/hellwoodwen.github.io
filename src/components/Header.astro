@@ -1,6 +1,7 @@
 ---
 
 ---
+
 <header>
 	<h1><a href="/">Wenwen</a></h1>
 	<nav>
@@ -11,29 +12,35 @@
 					<li>
 						<a
 							href="/works/scultpture-and-interactive-installation"
-							class={Astro.url.pathname === "/works/scultpture-and-interactive-installation" ? "active" : "normal"}
-						>Sculpture & Interactive Installation</a
+							class={Astro.url.pathname ===
+							"/works/scultpture-and-interactive-installation"
+								? "active"
+								: "normal"}>Sculpture & Interactive Installation</a
 						>
 					</li>
 					<li>
 						<a
 							href="/works/conceptual-performance"
-							class={Astro.url.pathname === "/works/conceptual-performance" ? "active" : "normal"}
-						>Conceptual Performance</a>
+							class={Astro.url.pathname === "/works/conceptual-performance"
+								? "active"
+								: "normal"}>Conceptual Performance</a
+						>
 					</li>
 				</ul>
 			</li>
 			<li>
 				<a
 					href="/about"
-					class={Astro.url.pathname === "/about" ? "active" : "normal"}
-				>About</a>
+					class={Astro.url.pathname === "/about" ? "active" : "normal"}>About</a
+				>
 			</li>
 			<li>
 				<a
 					href="/events-and-exhibitions"
-					class={Astro.url.pathname === "/events-and-exhibitions" ? "active" : "normal"}
-				>Events and Exhibitions</a>
+					class={Astro.url.pathname === "/events-and-exhibitions"
+						? "active"
+						: "normal"}>Events and Exhibitions</a
+				>
 			</li>
 		</ul>
 	</nav>
@@ -45,20 +52,24 @@
 	})
 </script>
 
-<style>
+<style lang="less">
 	header {
 		position: relative;
 		padding: 0.1rem 0.8rem;
 		background: url("../assets/styles/icon-menu.gif") no-repeat center right
 			1rem;
 		border-bottom: 1px solid #c4c4c4;
+
+		h1 {
+			margin-bottom: 0;
+			a {
+				text-decoration: none;
+				color: black;
+				font-family: "Raleway-black";
+			}
+		}
 	}
 
-	header h1 a {
-		text-decoration: none;
-		color: black;
-		font-family: "Raleway-black";
-	}
 	nav {
 		width: 100vw;
 		max-height: 0;
@@ -67,27 +78,24 @@
 		overflow: hidden;
 		background-color: white;
 		transition: all 0.3s;
-	}
-
-	nav a {
-		text-decoration: none;
-		color: black;
-	}
-
-	nav a.active{
-		font-weight: bold;
-	}
-
-	nav.open {
-		max-height: 300px;
-		padding: 1rem 0;
-		box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
-	}
-
-	nav li {
-		list-style: none;
-		font-weight: bold;
-		margin-bottom: 1rem;
+		z-index: 100;
+		a {
+			text-decoration: none;
+			color: black;
+		}
+		li {
+			list-style: none;
+			font-weight: bold;
+			margin-bottom: 1rem;
+		}
+		&.active {
+			font-weight: bold;
+		}
+		&.open {
+			max-height: 300px;
+			padding: 1rem 0;
+			box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+		}
 	}
 
 	ul.nav-second-level li {
