@@ -1,14 +1,50 @@
 ---
+import type { MarkdownInstance } from "astro"
 import Global from "./Global.astro"
+
+interface Props {
+	worksList: MarkdownInstance<Record<string, any>>[]
+}
+
+const {worksList} = Astro.props
 ---
 <Global pageTitle="works">
-	<main>
-		<slot />
-	</main>
+	<div class="works-gallery">
+		{
+			worksList.sort((a,b) => a.frontmatter.order - b.frontmatter.order).map((work) => {
+				const { image, title } = work.frontmatter
+				return (
+					<div class="works-gallery__work">
+						<a href={work.url}>
+							<div class="works-gallery__work__th">
+								<img src={image.url} alt={image.alt} />
+							</div>
+							<div class="works-gallery__work__title">{title}</div>
+						</a>
+					</div>
+				)
+			})
+		}
+	</div>
 </Global>
 
-<style>
-	main{
-		padding: 1rem 1.5rem;
+<style lang="less">
+	.works-gallery {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		column-gap: 2rem;
+		row-gap: 4rem;
+		margin-bottom: 4rem;
+
+		&__work {
+			&__th {
+				padding-bottom: 0.5rem;
+			}
+			a {
+				text-decoration: none;
+				color: black;
+				font-weight: bold;
+			}
+		}
 	}
 </style>

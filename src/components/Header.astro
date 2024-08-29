@@ -102,4 +102,28 @@
 		font-weight: normal;
 		margin-top: 1rem;
 	}
+
+	@media (min-width: 992px) {
+		header{
+			border-bottom: none;
+			padding: 0;
+
+			h1{
+				margin: 50px 40px 1px;
+				text-align: center;
+				border-bottom: 1px solid #c4c4c4;
+				line-height: 28px;
+			}
+		}
+		nav{
+			position: inherit;
+			max-height: inherit;
+			width: inherit;
+			padding: 3rem 40px;
+			&.open{
+				box-shadow: none;
+				padding: 3rem 40px;
+			}
+		}
+	}
 </style>
