@@ -6,24 +6,27 @@ interface Props {
 	worksList: MarkdownInstance<Record<string, any>>[]
 }
 
-const {worksList} = Astro.props
+const { worksList } = Astro.props
 ---
+
 <Global pageTitle="works">
 	<div class="works-gallery">
 		{
-			worksList.sort((a,b) => a.frontmatter.order - b.frontmatter.order).map((work) => {
-				const { image, title } = work.frontmatter
-				return (
-					<div class="works-gallery__work">
-						<a href={work.url}>
-							<div class="works-gallery__work__th">
-								<img src={image.url} alt={image.alt} />
-							</div>
-							<div class="works-gallery__work__title">{title}</div>
-						</a>
-					</div>
-				)
-			})
+			worksList
+				.sort((a, b) => a.frontmatter.order - b.frontmatter.order)
+				.map((work) => {
+					const { image, title } = work.frontmatter
+					return (
+						<div class="works-gallery__work">
+							<a href={work.url}>
+								<div class="works-gallery__work__th">
+									<img src={image.url} alt={image.alt} />
+								</div>
+								<div class="works-gallery__work__title">{title}</div>
+							</a>
+						</div>
+					)
+				})
 		}
 	</div>
 </Global>
@@ -31,10 +34,10 @@ const {worksList} = Astro.props
 <style lang="less">
 	.works-gallery {
 		display: grid;
-		grid-template-columns: 1fr 1fr;
-		column-gap: 2rem;
-		row-gap: 4rem;
+		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+		grid-gap: 50px 40px;
 		margin-bottom: 4rem;
+		padding: 3rem 1rem 0;
 
 		&__work {
 			&__th {
@@ -45,6 +48,11 @@ const {worksList} = Astro.props
 				color: black;
 				font-weight: bold;
 			}
+		}
+	}
+	@media (min-width: 992px) {
+		.works-gallery {
+			padding-right: 3rem;
 		}
 	}
 </style>
