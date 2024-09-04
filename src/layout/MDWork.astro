@@ -1,36 +1,64 @@
 ---
-import PhotoGallery from "../components/PhotoGallery.astro";
-import Global from "./Global.astro";
+import PhotoGallery from "../components/PhotoGallery.astro"
+import Global from "./Global.astro"
 
 interface Props {
-  frontmatter: {
-    title: string;
-    year: number;
-    description: string;
-    image: {
-      url: string;
-      alt: string;
-    };
-    category: string;
-    order: number;
-    gallery: string[];
-  };
+	frontmatter: {
+		title: string
+		year: number
+		description: string
+		image: {
+			url: string
+			alt: string
+		}
+		category: string
+		order: number
+		gallery?: string[]
+		wistiaId?: string[]
+	}
 }
-const { frontmatter } = Astro.props;
-const { gallery } = frontmatter;
+const { frontmatter } = Astro.props
+const { gallery, wistiaId } = frontmatter
 ---
 
 <Global pageTitle={frontmatter.title}>
-  <section class="work-gallery">
-    <PhotoGallery title={frontmatter.title} pictures={gallery} />
-  </section>
-  <section class="main">
-    <h2>{frontmatter.title}</h2>
-    <div class="work-description">
-      {frontmatter.description}
-    </div>
-    <div class="work-content">
-      <slot />
-    </div>
-  </section>
+	{
+		gallery && (
+			<section class="work-gallery">
+				<PhotoGallery title={frontmatter.title} pictures={gallery} />
+			</section>
+		)
+	}
+	{
+		Array.isArray(wistiaId) &&
+			wistiaId.map((videoId) => (
+				<section>
+					<div
+						class={`wistia_embed wistia_async_${videoId}`}
+						style="height:360px;width:640px"
+					>
+						&nbsp;
+					</div>
+				</section>
+			))
+	}
+	<section class="main">
+		<h2>{frontmatter.title}</h2>
+		<div class="work-description">
+			{frontmatter.description}
+		</div>
+		<div class="work-content">
+			<slot />
+		</div>
+	</section>
 </Global>
+
+{
+	wistiaId && (
+		<script
+			charset="ISO-8859-1"
+			src="//fast.wistia.com/assets/external/E-v1.js"
+			async
+		/>
+	)
+}
