@@ -1,24 +1,13 @@
 ---
 import PhotoGallery from "../components/PhotoGallery.astro"
 import Global from "./Global.astro"
+import type { MDWorkProps } from "../types/types"
 
 interface Props {
-	frontmatter: {
-		title: string
-		year: number
-		description: string
-		image: {
-			url: string
-			alt: string
-		}
-		category: string
-		order: number
-		gallery?: string[]
-		wistiaId?: string[]
-	}
+	frontmatter: MDWorkProps
 }
 const { frontmatter } = Astro.props
-const { gallery, wistiaId } = frontmatter
+const { gallery, wistiaId, qqVideoId, vimeoId } = frontmatter
 ---
 
 <Global pageTitle={frontmatter.title}>
@@ -30,7 +19,7 @@ const { gallery, wistiaId } = frontmatter
 		)
 	}
 	{
-		Array.isArray(wistiaId) &&
+		wistiaId &&
 			wistiaId.map((videoId) => (
 				<section>
 					<div
@@ -40,6 +29,26 @@ const { gallery, wistiaId } = frontmatter
 						&nbsp;
 					</div>
 				</section>
+			))
+	}
+	{
+		qqVideoId &&
+			qqVideoId.map((videoId) => (
+				<iframe
+					src={`https://v.qq.com/txp/iframe/player.html?vid=${videoId}`}
+					allow={"autoplay; fullscreen"}
+					allowfullscreen={true}
+				/>
+			))
+	}
+	{
+		vimeoId &&
+			vimeoId.map((videoId) => (
+				<iframe
+					src={`https://player.vimeo.com/video/${videoId}`}
+					allow={"autoplay; fullscreen"}
+					allowfullscreen={true}
+				/>
 			))
 	}
 	<section class="main">

@@ -3,9 +3,7 @@ layout: ../../../layout/MDWork.astro
 title: 'Semi-Conductivity'
 year: 2019
 description: 'Customized electronics, polyester stripes, steel stands, connection bits and cabling.'
-image:
-    url: '/images/th/Semi-Conductivity.jpg'
-    alt: 'Semi-Conductivity'
+image: '/images/th/Semi-Conductivity.jpg'
 category: "Sculpture & Interactive Installation"
 order: 0
 gallery: [

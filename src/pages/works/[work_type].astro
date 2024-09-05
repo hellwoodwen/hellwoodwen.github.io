@@ -1,0 +1,37 @@
+---
+import type { MarkdownInstance } from "astro"
+import type { MDWorkProps } from "../../types/types"
+import Works from "../../layout/Works.astro"
+
+export async function getStaticPaths() {
+	const paths: {
+		params: { work_type: string }
+		props: { worksList: MarkdownInstance<MDWorkProps>[] }
+	}[] = []
+
+	const worksLists = await Astro.glob<MDWorkProps>("./*/*.md")
+
+	worksLists.forEach((work) => {
+		const { url } = work
+		if (url) {
+			const workType = url.split("/")[2]
+			const myWorkTypeProp = paths.find((_) => _.params.work_type === workType)
+			if (myWorkTypeProp) {
+				myWorkTypeProp.props.worksList.push(work)
+			} else {
+				paths.push({
+					params: { work_type: workType },
+					props: {
+						worksList: [work],
+					},
+				})
+			}
+		}
+	})
+	return paths
+}
+
+const { worksList } = Astro.props
+---
+
+<Works worksList={worksList} />

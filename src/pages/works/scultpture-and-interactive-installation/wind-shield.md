@@ -2,9 +2,7 @@
 layout: ../../../layout/MDWork.astro
 title: 'Wind Shield'
 year: 2018
-image:
-    url: '/images/th/wind-shield.jpg'
-    alt: 'Present Revisit'
+image: '/images/th/wind-shield.jpg'
 category: "Sculpture & Interactive Installation"
 order: 20
 gallery: [

@@ -2,9 +2,7 @@
 layout: ../../../layout/MDWork.astro
 title: 'Body Sequencer'
 year: 2019
-image:
-    url: '/images/th/Body-Sequencer.jpg'
-    alt: 'Body Sequencer'
+image: '/images/th/Body-Sequencer.jpg'
 category: "Sculpture & Interactive Installation"
 order: 5
 gallery: [
