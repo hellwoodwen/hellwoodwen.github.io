@@ -7,15 +7,11 @@ image: '/images/th/food-variation-1.jpg'
 category: "Sculpture & Interactive Installation"
 order: 15
 gallery: [
-    "Semi-Conductivity-1.jpg",
-    "Semi-Conductivity-2.jpg",
-    "Semi-Conductivity-3.jpg",
-    "Semi-Conductivity-4.jpg",
-    "Semi-Conductivity-5.jpg",
-    "Semi-Conductivity-6.jpg",
-    "Semi-Conductivity-7.jpg",
-    "Semi-Conductivity-8.jpg",
-    "Semi-Conductivity-9.jpg",
+    "food-variation-1.jpg",
+    "food-variation-2.jpg",
+    "food-variation-3.jpg",
+    "food-variation-4.jpg",
+    "food-variation-5.jpg"
 ]
 ---
 An interactive installation that reflects a current reality where sweet and sour sexual pleasure exists as an open offer hanging along our way of social progression.

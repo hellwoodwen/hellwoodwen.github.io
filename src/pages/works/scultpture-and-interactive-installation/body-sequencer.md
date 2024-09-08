@@ -5,17 +5,7 @@ year: 2019
 image: '/images/th/Body-Sequencer.jpg'
 category: "Sculpture & Interactive Installation"
 order: 5
-gallery: [
-    "Semi-Conductivity-1.jpg",
-    "Semi-Conductivity-2.jpg",
-    "Semi-Conductivity-3.jpg",
-    "Semi-Conductivity-4.jpg",
-    "Semi-Conductivity-5.jpg",
-    "Semi-Conductivity-6.jpg",
-    "Semi-Conductivity-7.jpg",
-    "Semi-Conductivity-8.jpg",
-    "Semi-Conductivity-9.jpg",
-]
+gallery: ["Body-Sequencer.jpg"]
 wistiaId: ['s8nqk9q2ih']
 ---
 

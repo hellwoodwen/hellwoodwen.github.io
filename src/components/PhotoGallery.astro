@@ -225,4 +225,14 @@ const {pictures, title = "pic-gallery"} = Astro.props
       }
     }
   }
+  @media (min-width: 992px) {
+    .hww-gallery {
+      &__shower {
+        &__picture {
+          width: 60vw;
+          min-width: 60vw;
+        }
+      }
+    }
+  }
 </style>

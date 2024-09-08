@@ -7,17 +7,10 @@ image: '/images/th/present-revisit-1.jpg'
 category: "Sculpture & Interactive Installation"
 order: 10
 gallery: [
-    "Semi-Conductivity-1.jpg",
-    "Semi-Conductivity-2.jpg",
-    "Semi-Conductivity-3.jpg",
-    "Semi-Conductivity-4.jpg",
-    "Semi-Conductivity-5.jpg",
-    "Semi-Conductivity-6.jpg",
-    "Semi-Conductivity-7.jpg",
-    "Semi-Conductivity-8.jpg",
-    "Semi-Conductivity-9.jpg",
+    "present-revisit-1.jpg",
+    "present-revisit-2.jpg"
 ]
-wistiaId: ['70xb22ryrq']
+vimeoId: ['496278891', '438499299']
 ---
 Present Revisit is an interactive kinetic light sculpture in the form of a floating illuminated ellipse.
 
