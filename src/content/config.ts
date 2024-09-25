@@ -5,7 +5,6 @@ const worksCollection = defineCollection({
     title: z.string(),
 	year: z.string().optional(),
 	description: z.string().optional(),
-	image: z.string(),
 	order: z.number(),
 	gallery: z.array(z.string()).optional(),
 	wistiaId: z.array(z.string()).optional(),

@@ -1,7 +1,6 @@
 ---
 layout: ../../../layout/MDWork.astro
 title: 'Poi Dance Improvisations'
-image: '/images/th/poi-performance-video-th.jpg'
 order: 2
 gallery: [
     "poi-performance01.jpg",

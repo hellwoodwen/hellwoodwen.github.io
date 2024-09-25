@@ -1,20 +1,22 @@
 ---
-import PhotoGallery from "../components/PhotoGallery.astro"
-import Global from "./Global.astro"
-import type { MDWorkProps } from "../types/types"
+import PhotoGallery from "../components/PhotoGallery.astro";
+import Global from "./Global.astro";
+import type { WorkObjType } from "../types/types";
+import type { CollectionEntry } from "astro:content";
 
 interface Props {
-	frontmatter: MDWorkProps
+	workObj: CollectionEntry<"works">;
 }
-const { frontmatter } = Astro.props
-const { gallery, wistiaId, qqVideoId, vimeoId } = frontmatter
+const { workObj } = Astro.props;
+const { data } = workObj;
+const { gallery, wistiaId, qqVideoId, vimeoId } = data;
 ---
 
-<Global pageTitle={frontmatter.title}>
+<Global pageTitle={data.title}>
 	{
 		gallery && (
 			<section class="work-gallery">
-				<PhotoGallery title={frontmatter.title} pictures={gallery} />
+				<PhotoGallery title={data.title} pictures={gallery} />
 			</section>
 		)
 	}
@@ -52,9 +54,9 @@ const { gallery, wistiaId, qqVideoId, vimeoId } = frontmatter
 			))
 	}
 	<section class="main">
-		<h2>{frontmatter.title}</h2>
+		<h2>{data.title}</h2>
 		<div class="work-description">
-			{frontmatter.description}
+			{data.description}
 		</div>
 		<div class="work-content">
 			<slot />

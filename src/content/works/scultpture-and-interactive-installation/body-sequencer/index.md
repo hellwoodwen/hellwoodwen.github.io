@@ -2,8 +2,6 @@
 layout: ../../../layout/MDWork.astro
 title: 'Body Sequencer'
 year: '2019'
-image: '/images/th/Body-Sequencer.jpg'
-category: "Sculpture & Interactive Installation"
 order: 5
 gallery: ["Body-Sequencer.jpg"]
 wistiaId: ['s8nqk9q2ih']

@@ -3,8 +3,6 @@ layout: ../../../layout/MDWork.astro
 title: "'Fly' 2019"
 year: '2019'
 description: Electronics
-image: '/images/th/fly2019.jpg'
-category: "Sculpture & Interactive Installation"
 order: 25
 wistiaId: ["zmt9iz74ca"]
 ---

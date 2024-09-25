@@ -1,7 +1,6 @@
 ---
 layout: ../../../layout/MDWork.astro
 title: 'Evolvement II'
-image: '/images/th/envolvement-2-1-th.jpg'
 order: 5
 gallery:  ["envolvement-2-1.jpg",
           "0518_2.jpg",

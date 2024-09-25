@@ -3,8 +3,6 @@ layout: ../../../layout/MDWork.astro
 title: 'Food Variation'
 year: '2018'
 description: Paperboard, rope, plant fiber glue, yogurt melts.
-image: '/images/th/food-variation-1.jpg'
-category: "Sculpture & Interactive Installation"
 order: 15
 gallery: [
     "food-variation-1.jpg",

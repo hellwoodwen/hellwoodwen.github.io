@@ -1,9 +1,7 @@
-export type MDWorkProps = {
+export type WorkObjType = {
 	title: string
 	year: number
 	description: string
-	image: string
-	category: string
 	order: number
 	gallery?: string[]
 	wistiaId?: string[]

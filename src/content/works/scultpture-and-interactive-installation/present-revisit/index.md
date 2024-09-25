@@ -3,8 +3,6 @@ layout: ../../../layout/MDWork.astro
 title: 'Present Revisit'
 year: '2019'
 description: Opaque acrylic tube sections, LED strips, electronics, motion-tracking camera.
-image: '/images/th/present-revisit-1.jpg'
-category: "Sculpture & Interactive Installation"
 order: 10
 gallery: [
     "present-revisit-1.jpg",
