@@ -10,13 +10,14 @@ interface Props {
 const { workObj } = Astro.props;
 const { data } = workObj;
 const { gallery, wistiaId, qqVideoId, vimeoId } = data;
+const [workType, workName] = workObj.slug.split('/')
 ---
 
 <Global pageTitle={data.title}>
 	{
 		gallery && (
 			<section class="work-gallery">
-				<PhotoGallery title={data.title} pictures={gallery} />
+				<PhotoGallery pictures={gallery} workType={workType} workName={workName} />
 			</section>
 		)
 	}

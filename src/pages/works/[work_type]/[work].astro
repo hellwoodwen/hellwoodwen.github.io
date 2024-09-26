@@ -12,8 +12,6 @@ export async function getStaticPaths() {
 
 	allWorks.forEach((workObj) => {
 		const [work_type, work] = workObj.slug.split("/");
-		console.log(workObj.slug, work);
-		
 		out.push({
 			params: { work_type, work },
 			props: { workObj },
