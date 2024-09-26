@@ -1,40 +1,150 @@
 ---
-import { Image } from "astro:assets";
+import { Image } from "astro:assets"
 
 interface Props {
-  pictures: string[];
-  workName: string;
-  workType: string;
+	pictures: string[]
+	workName: string
+	workType: string
 }
 
-const { pictures, workName, workType } = Astro.props;
+const { pictures, workName, workType } = Astro.props
 
 const worksImages = import.meta.glob<{ default: ImageMetadata }>(
-  "/src/content/works/*/*/*.{jpeg,jpg,png,gif}",
-);
+	"/src/content/works/*/*/*.{jpeg,jpg,png,gif}",
+)
 
 pictures.forEach((_) => {
-  const key = `/src/content/works/${workType}/${workName}/${_}`;
-  if (!worksImages[key]) throw new Error(`Picture "${_}" inexistent`);
-});
+	const key = `/src/content/works/${workType}/${workName}/${_}`
+	if (!worksImages[key]) throw new Error(`Picture "${_}" inexistent`)
+})
 ---
 
 <div class="hww-gallery">
-  {
-    pictures.map((_, i) => {
-      const key = `/src/content/works/${workType}/${workName}/${_}`;
-      return (
-        <p>
-          <Image
-            src={worksImages[key]()}
-            alt={`${workType} - gallery picture #${1 + i}`}
-            width={150}
-            height={150}
-          />
-        </p>
-      );
-    })
-  }
-  <p>workName: {workName}</p>
-  <p>worktype: {workType}</p>
+	{
+		pictures.map((_, i) => {
+			const key = `/src/content/works/${workType}/${workName}/${_}`
+			return (
+				<div class="hww-gallery__cell">
+					<Image
+						class="hww-gallery__cell__picture"
+						src={worksImages[key]()}
+						alt={`${workType} - gallery picture #${1 + i}`}
+						width={220}
+					/>
+				</div>
+			)
+		})
+	}
+	<div class="hww-gallery__modal hide">
+		{
+			pictures.map((_, i) => {
+				const key = `/src/content/works/${workType}/${workName}/${_}`
+				return (
+					<div class="hww-gallery__modal__image hide" data-picindex={i}>
+						<Image
+							src={worksImages[key]()}
+							alt={`${workType} - gallery picture #${1 + i}`}
+							width={900}
+						/>
+					</div>
+				)
+			})
+		}
+	</div>
+	<div class="hww-gallery__modal__background hide"></div>
 </div>
+
+<script>
+	const pictures = document.querySelectorAll(".hww-gallery__modal__image")
+	const thumbnails = document.querySelectorAll(".hww-gallery__cell__picture")
+	const modalContainer = document.querySelector(".hww-gallery__modal")
+	const modalBackground = document.querySelector(
+		".hww-gallery__modal__background",
+	)
+
+	function selectPicture(index: number) {
+		pictures.forEach((pic, i) => {
+			if (i === index) {
+        pic.classList.remove("hide")
+			} else {
+				pic.classList.add("hide")
+			}
+		})
+	}
+
+	function displayModal(show: boolean) {
+		if (show) {
+			console.log("retira el hide", modalContainer)
+			modalContainer?.classList.remove("hide")
+			modalBackground?.classList.remove("hide")
+		} else {
+			modalContainer?.classList.add("hide")
+			modalBackground?.classList.add("hide")
+		}
+	}
+
+	thumbnails.forEach((thm, i) => {
+		thm.addEventListener("click", () => {
+			console.log("miau", i)
+			selectPicture(i)
+			displayModal(true)
+		})
+	})
+
+	modalBackground?.addEventListener("click", () => displayModal(false))
+</script>
+
+<style lang="less">
+	.hww-gallery {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, 120px);
+		grid-gap: 20px 40px;
+
+		&__cell {
+			width: 140px;
+			height: 140px;
+			border: 1px solid tomato;
+			overflow: hidden;
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+
+		&__modal {
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			z-index: 160;
+			&.hide {
+				display: none;
+			}
+			&__image {
+        &.hide{
+          display: none;
+        }
+				img {
+					width: auto;
+					height: auto;
+					max-height: 70vh;
+					max-width: 70vw;
+				}
+			}
+			&__background {
+				position: fixed;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				background-color: rgba(0, 0, 0, 0.733);
+				z-index: 150;
+				&.hide {
+					display: none;
+				}
+			}
+		}
+	}
+</style>
