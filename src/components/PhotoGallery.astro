@@ -62,19 +62,22 @@ pictures.forEach((_) => {
 		".hww-gallery__modal__background",
 	)
 
+	const topZIndex = pictures.length
+
 	function selectPicture(index: number) {
 		pictures.forEach((pic, i) => {
 			if (i === index) {
-        pic.classList.remove("hide")
+				pic.classList.remove("hide")
+				pic.classList.add("show")
 			} else {
 				pic.classList.add("hide")
+				pic.classList.remove("show")
 			}
 		})
 	}
 
 	function displayModal(show: boolean) {
 		if (show) {
-			console.log("retira el hide", modalContainer)
 			modalContainer?.classList.remove("hide")
 			modalBackground?.classList.remove("hide")
 		} else {
@@ -85,10 +88,22 @@ pictures.forEach((_) => {
 
 	thumbnails.forEach((thm, i) => {
 		thm.addEventListener("click", () => {
-			console.log("miau", i)
 			selectPicture(i)
 			displayModal(true)
 		})
+	})
+
+	pictures.forEach((picture) => {
+		const observer = new MutationObserver((mutationsList) => {
+			for (let mutation of mutationsList) {
+				if (mutation.attributeName === "class") {
+					const target = mutation.target as HTMLElement
+					console.log(target.classList)
+				}
+			}
+		})
+
+		observer.observe(picture, { attributes: true })
 	})
 
 	modalBackground?.addEventListener("click", () => displayModal(false))
@@ -123,9 +138,22 @@ pictures.forEach((_) => {
 				display: none;
 			}
 			&__image {
-        &.hide{
-          display: none;
-        }
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				transition: opacity 1s;
+				&.hide {
+					display: none;
+				}
+				&.toShow {
+					display: block;
+					opacity: 0;
+				}
+				&.show {
+					display: block;
+					opacity: 1;
+				}
 				img {
 					width: auto;
 					height: auto;
