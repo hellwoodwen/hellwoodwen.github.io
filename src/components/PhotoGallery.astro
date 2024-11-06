@@ -17,16 +17,18 @@ pictures.forEach((_) => {
 	const key = `/src/content/works/${workType}/${workName}/${_}`
 	if (!worksImages[key]) throw new Error(`Picture "${_}" inexistent`)
 })
+
+const COMPONENT_PREFIX = "hww-gallery"
 ---
 
-<div class="hww-gallery">
+<div class=`${COMPONENT_PREFIX}`>
 	{
 		pictures.map((_, i) => {
 			const key = `/src/content/works/${workType}/${workName}/${_}`
 			return (
-				<div class="hww-gallery__cell">
+				<div class={`${COMPONENT_PREFIX}__cell`}>
 					<Image
-						class="hww-gallery__cell__picture"
+						class={`${COMPONENT_PREFIX}__cell__picture`}
 						src={worksImages[key]()}
 						alt={`${workType} - gallery picture #${1 + i}`}
 						width={220}
@@ -35,32 +37,50 @@ pictures.forEach((_) => {
 			)
 		})
 	}
-	<div class="hww-gallery__modal hide">
-		{
-			pictures.map((_, i) => {
-				const key = `/src/content/works/${workType}/${workName}/${_}`
-				return (
-					<div class="hww-gallery__modal__image hide" data-picindex={i}>
-						<Image
-							src={worksImages[key]()}
-							alt={`${workType} - gallery picture #${1 + i}`}
-							width={900}
-						/>
-					</div>
-				)
-			})
-		}
+	<div class={`${COMPONENT_PREFIX}__modal hide`}>
+		<div class={`${COMPONENT_PREFIX}__image__container`}>
+			{
+				pictures.map((_, i) => {
+					const key = `/src/content/works/${workType}/${workName}/${_}`
+					return (
+						<div class={`${COMPONENT_PREFIX}__modal__image hide`} data-picindex={i}>
+							<Image
+								src={worksImages[key]()}
+								alt={`${workType} - gallery picture #${1 + i}`}
+								width={900}
+							/>
+						</div>
+					)
+				})
+			}
+		</div>
+		<div class={`${COMPONENT_PREFIX}__nav`}>
+			{
+				pictures.map((_, i) => {
+					const key = `/src/content/works/${workType}/${workName}/${_}`
+					return (
+						<div class={`${COMPONENT_PREFIX}__nav__thumbs`} data-picindex={i}>
+							<Image
+								src={worksImages[key]()}
+								alt={`${workType} - thumb picture #${1 + i}`}
+								width={100}
+							/>
+						</div>
+					)
+				})
+			}
+		</div>
 	</div>
-	<div class="hww-gallery__modal__background hide"></div>
+	<div class={`${COMPONENT_PREFIX}__modal__background hide`}></div>
 </div>
 
 <script>
-	const pictures = document.querySelectorAll(".hww-gallery__modal__image")
-	const thumbnails = document.querySelectorAll(".hww-gallery__cell__picture")
-	const modalContainer = document.querySelector(".hww-gallery__modal")
-	const modalBackground = document.querySelector(
-		".hww-gallery__modal__background",
-	)
+	const COMPONENT_PREFIX = "hww-gallery"
+	const pictures = document.querySelectorAll(`.${COMPONENT_PREFIX}__modal__image`)
+	const thumbnails = document.querySelectorAll(`.${COMPONENT_PREFIX}__cell__picture`)
+	const modalContainer = document.querySelector(`.${COMPONENT_PREFIX}__modal`)
+	const modalBackground = document.querySelector(`.${COMPONENT_PREFIX}__modal__background`)
+	const galleryNavThumbs = document.querySelectorAll(`.${COMPONENT_PREFIX}__nav__thumbs`)
 
 	const topZIndex = pictures.length
 
@@ -69,9 +89,11 @@ pictures.forEach((_) => {
 			if (i === index) {
 				pic.classList.remove("hide")
 				pic.classList.add("show")
+				galleryNavThumbs[i].classList.add('selected')
 			} else {
 				pic.classList.add("hide")
 				pic.classList.remove("show")
+				galleryNavThumbs[i].classList.remove('selected')
 			}
 		})
 	}
