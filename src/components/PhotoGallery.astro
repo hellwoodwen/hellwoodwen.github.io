@@ -38,12 +38,15 @@ const COMPONENT_PREFIX = "hww-gallery"
 		})
 	}
 	<div class={`${COMPONENT_PREFIX}__modal hide`}>
-		<div class={`${COMPONENT_PREFIX}__image__container`}>
+		<div class={`${COMPONENT_PREFIX}__modal__image`}>
 			{
 				pictures.map((_, i) => {
 					const key = `/src/content/works/${workType}/${workName}/${_}`
 					return (
-						<div class={`${COMPONENT_PREFIX}__modal__image hide`} data-picindex={i}>
+						<div
+							class={`${COMPONENT_PREFIX}__modal__image__container hide`}
+							data-picindex={i}
+						>
 							<Image
 								src={worksImages[key]()}
 								alt={`${workType} - gallery picture #${1 + i}`}
@@ -54,12 +57,15 @@ const COMPONENT_PREFIX = "hww-gallery"
 				})
 			}
 		</div>
-		<div class={`${COMPONENT_PREFIX}__nav`}>
+		<div class={`${COMPONENT_PREFIX}__modal__nav`}>
 			{
 				pictures.map((_, i) => {
 					const key = `/src/content/works/${workType}/${workName}/${_}`
 					return (
-						<div class={`${COMPONENT_PREFIX}__nav__thumbs`} data-picindex={i}>
+						<div
+							class={`${COMPONENT_PREFIX}__modal__nav__thumbs`}
+							data-picindex={i}
+						>
 							<Image
 								src={worksImages[key]()}
 								alt={`${workType} - thumb picture #${1 + i}`}
@@ -76,11 +82,19 @@ const COMPONENT_PREFIX = "hww-gallery"
 
 <script>
 	const COMPONENT_PREFIX = "hww-gallery"
-	const pictures = document.querySelectorAll(`.${COMPONENT_PREFIX}__modal__image`)
-	const thumbnails = document.querySelectorAll(`.${COMPONENT_PREFIX}__cell__picture`)
+	const pictures = document.querySelectorAll(
+		`.${COMPONENT_PREFIX}__modal__image__container`,
+	)
+	const thumbnails = document.querySelectorAll(
+		`.${COMPONENT_PREFIX}__cell__picture`,
+	)
 	const modalContainer = document.querySelector(`.${COMPONENT_PREFIX}__modal`)
-	const modalBackground = document.querySelector(`.${COMPONENT_PREFIX}__modal__background`)
-	const galleryNavThumbs = document.querySelectorAll(`.${COMPONENT_PREFIX}__nav__thumbs`)
+	const modalBackground = document.querySelector(
+		`.${COMPONENT_PREFIX}__modal__background`,
+	)
+	const galleryNavThumbs = document.querySelectorAll(
+		`.${COMPONENT_PREFIX}__modal__nav__thumbs`,
+	)
 
 	const topZIndex = pictures.length
 
@@ -89,13 +103,14 @@ const COMPONENT_PREFIX = "hww-gallery"
 			if (i === index) {
 				pic.classList.remove("hide")
 				pic.classList.add("show")
-				galleryNavThumbs[i].classList.add('selected')
+				galleryNavThumbs[i].classList.add("selected")
 			} else {
 				pic.classList.add("hide")
 				pic.classList.remove("show")
-				galleryNavThumbs[i].classList.remove('selected')
+				galleryNavThumbs[i].classList.remove("selected")
 			}
 		})
+		displayModal(true)
 	}
 
 	function displayModal(show: boolean) {
@@ -109,10 +124,8 @@ const COMPONENT_PREFIX = "hww-gallery"
 	}
 
 	thumbnails.forEach((thm, i) => {
-		thm.addEventListener("click", () => {
-			selectPicture(i)
-			displayModal(true)
-		})
+		thm.addEventListener("click", () => selectPicture(i))
+		galleryNavThumbs[i].addEventListener("click", () => selectPicture(i))
 	})
 
 	pictures.forEach((picture) => {
@@ -151,36 +164,65 @@ const COMPONENT_PREFIX = "hww-gallery"
 		}
 
 		&__modal {
+			width: 80vw;
+			height: fit-content;
 			position: fixed;
 			top: 50%;
 			left: 50%;
-			transform: translate(-50%, -50%);
 			z-index: 160;
+			display: flex;
+			flex-direction: column;
+			transform: translate(-50%, -50%);
+
+			&__image {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			&__nav {
+				display: flex;
+				justify-content: center;
+				flex-wrap: nowrap;
+				overflow-x: auto;
+				&__thumbs {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					width: 100px;
+					min-width: 100px;
+					height: 67px;
+					overflow: hidden;
+					margin: 1rem .5rem;
+					&.selected {
+						border: white 0.5rem solid;
+						box-sizing: border-box;
+					}
+				}
+			}
+
 			&.hide {
 				display: none;
 			}
 			&__image {
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%, -50%);
-				transition: opacity 1s;
-				&.hide {
-					display: none;
-				}
-				&.toShow {
-					display: block;
-					opacity: 0;
-				}
-				&.show {
-					display: block;
-					opacity: 1;
-				}
-				img {
-					width: auto;
-					height: auto;
-					max-height: 70vh;
-					max-width: 70vw;
+				&__container {
+					&.hide {
+						display: none;
+					}
+					&.toShow {
+						display: block;
+						opacity: 0;
+					}
+					&.show {
+						display: block;
+						opacity: 1;
+					}
+					img {
+						width: auto;
+						height: auto;
+						max-height: 70vh;
+						max-width: 70vw;
+					}
 				}
 			}
 			&__background {
