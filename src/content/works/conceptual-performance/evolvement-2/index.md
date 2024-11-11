@@ -1,5 +1,5 @@
 ---
-layout: ../../../layout/MDWork.astro
+layout: ../../../../layout/Works.astro
 title: 'Evolvement II'
 order: 5
 gallery:  ["envolvement-2-1.jpg",

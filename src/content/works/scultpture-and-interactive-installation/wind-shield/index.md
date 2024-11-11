@@ -1,5 +1,5 @@
 ---
-layout: ../../../layout/MDWork.astro
+layout: ../../../layout/Work.astro
 title: 'Wind Shield'
 year: '2018'
 order: 20

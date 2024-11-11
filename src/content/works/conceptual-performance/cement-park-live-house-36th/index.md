@@ -1,5 +1,5 @@
 ---
-layout: ../../../layout/MDWork.astro
+layout: ../../../../layout/Works.astro
 title: 'Cement Park Live House 36th'
 year: '2019'
 order: 0

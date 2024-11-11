@@ -1,5 +1,6 @@
 ---
 import { Image } from "astro:assets"
+import NavIconSprites from "../assets/image-gallery-icons.svg"
 
 interface Props {
 	pictures: string[]
@@ -19,6 +20,7 @@ pictures.forEach((_) => {
 })
 
 const COMPONENT_PREFIX = "hww-gallery"
+const gallerySprints = `url(${NavIconSprites.src})`
 ---
 
 <div class=`${COMPONENT_PREFIX}`>
@@ -58,6 +60,10 @@ const COMPONENT_PREFIX = "hww-gallery"
 			}
 		</div>
 		<div class={`${COMPONENT_PREFIX}__modal__nav`}>
+			<div class={`${COMPONENT_PREFIX}__modal__nav__left nav-button`}>
+				<span>Left</span>
+			</div>
+			<div class={`${COMPONENT_PREFIX}__modal__nav__container`}>
 			{
 				pictures.map((_, i) => {
 					const key = `/src/content/works/${workType}/${workName}/${_}`
@@ -75,6 +81,13 @@ const COMPONENT_PREFIX = "hww-gallery"
 					)
 				})
 			}
+			</div>
+			<div class={`${COMPONENT_PREFIX}__modal__nav__right nav-button`}>
+				<span>Right</span>
+			</div>
+			<div class={`${COMPONENT_PREFIX}__modal__nav__close nav-button`}>
+				<span>Close</span>
+			</div>
 		</div>
 	</div>
 	<div class={`${COMPONENT_PREFIX}__modal__background hide`}></div>
@@ -144,7 +157,7 @@ const COMPONENT_PREFIX = "hww-gallery"
 	modalBackground?.addEventListener("click", () => displayModal(false))
 </script>
 
-<style lang="less">
+<style lang="less" define:vars={{gallerySprints}}>
 	.hww-gallery {
 		display: grid;
 		grid-template-columns: repeat(auto-fill, 120px);
@@ -175,29 +188,38 @@ const COMPONENT_PREFIX = "hww-gallery"
 			transform: translate(-50%, -50%);
 
 			&__image {
+              	height: calc(80vh - 67px);
 				display: flex;
 				justify-content: center;
 				align-items: center;
 			}
 
 			&__nav {
-				display: flex;
-				justify-content: center;
-				flex-wrap: nowrap;
-				overflow-x: auto;
 				&__thumbs {
+					flex: 0 0 auto;
 					display: flex;
 					justify-content: center;
 					align-items: center;
 					width: 100px;
-					min-width: 100px;
 					height: 67px;
 					overflow: hidden;
-					margin: 1rem .5rem;
 					&.selected {
 						border: white 0.5rem solid;
 						box-sizing: border-box;
 					}
+				}
+              	&__container{
+                  width: fit-content;
+                  max-width: 100%;
+                  margin: 0 auto;
+                  display: flex;
+                  flex-wrap: nowrap;
+                  overflow-x: auto;
+                  gap: 1rem;
+                }
+
+				.nav-button{
+					background: var(--gallerySprints);
 				}
 			}
 

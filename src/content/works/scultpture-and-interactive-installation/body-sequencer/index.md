@@ -1,5 +1,5 @@
 ---
-layout: ../../../layout/MDWork.astro
+layout: ../../../layout/Work.astro
 title: 'Body Sequencer'
 year: '2019'
 order: 5
