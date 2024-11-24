@@ -112,7 +112,7 @@ const COMPONENT_PREFIX = "hww-gallery"
         `.${COMPONENT_PREFIX}__modal__nav__thumbs`,
     )
 
-    const topZIndex = pictures.length
+    // const topZIndex = pictures.length
     let actualPicture = 0
 
     function selectPicture(index: number) {
@@ -183,6 +183,7 @@ const COMPONENT_PREFIX = "hww-gallery"
       width: 140px;
       height: 140px;
       overflow: hidden;
+      cursor: pointer;
 
       img {
         width: 100%;
@@ -216,7 +217,7 @@ const COMPONENT_PREFIX = "hww-gallery"
 
         .nav-button {
           height: 38px;
-          background: url("../assets/image-gallery-icons.svg");
+          background: url("../assets/image-gallery-icons-v2.svg");
           cursor: pointer;
 
           span {
